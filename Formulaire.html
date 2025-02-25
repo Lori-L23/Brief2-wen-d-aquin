@@ -10,183 +10,1320 @@
 </head>
 
 <body>
-    <form method="post">
-        <section class="flex ">
-        <section class="bg-amber-200 w-1/3">
+    <nav>
 
-            <label for="photo">Photo de profil</label>
+    </nav>
+    <!-- premiere section -->
+    <section class="w-1/2 grid-cols-1">
+        <form method="post">
+            <section class="m-2">
+
+                <div class="flex justify-center">
+                    <div class="flex-col-reverse">
+                        <button role="radio" class="border-1  justify-around p-2">
+                            <span>
+                                <img src="images/telecharger.png" alt="telecharger" class="w-5">
+                            </span>
+                            <span>Telecharger un CV existant</span>
+                        </button>
+                    </div>
+
+                    <button class="border-1 justify-around p-2"><img src="images/linkedin.png" alt="LinkedIn"
+                            class=" h-6 justify-center ">Importer votre profil LinkedIn</button>
+
+                </div>
+                <div class="w-full border-b border-gray-200">
+                    <div class="pt-5 pb-3">
+                        <div class="py-2 ">
+                            <div class="">
+                                <div class="flex items-center mb-1">
+                                    <label for=":r0:"
+                                        class="flex-grow truncate block font-medium text-gray-600 text-sm">Emploi
+                                        recherché</label>
+                                </div>
+                            </div>
+                            <div
+                                class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                <input id=":r0:" data-s="Emploi recherché" type="text" size="1" autocomplete="off"
+                                    maxlength="255"
+                                    class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                    value="Analyste informatique">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- informations personnelles -->
+
+                <p class="text-gray-500"></p>
+                <p style="direction: ltr;"></p>
+                <div class="w-full border-b border-gray-200 collapsible-section">
+                    <div class="flex items-stretch w-full">
+                        <button type="button"
+                            class="flex-grow py-3 pe-6 text-start overflow-hidden rounded focus-visible:ring-4 ring-brand-200 ring-inset">
+                            <h3 class="text-xl truncate text-gray-800 font-bold select-none" style="direction: ltr;">
+                                Informations personnelles</h3>
+                        </button>
+                        <div class="py-6 flex whitespace-nowrap items-start">
+                            <button class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 
+                                items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 
+                                can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base" type="button"
+                                data-testid="" style="outline: none;">
+                                <span class="relative">
+
+                                    <img src="images/deroulant.png" alt="Icône de flèche"
+                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6">
+
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full mb-4">
+                    <div class="-mx-2 flex flex-col">
+                        <div class="mx-2">
+                            <div class="flex-wrap sm:flex">
+                                <div class="sm:flex-shrink-0 pe-4">
+                                    <div class="flex relative flex-col py-2 h-32 sm:h-full w-24 sm:w-32">
+                                        <div class="flex items-center mb-1">
+                                            <label
+                                                class="flex-grow truncate block font-medium text-gray-600 text-sm">Photo</label>
+                                        </div>
+                                        <button type="button"
+                                            class="border border-transparent bg-gray-100 rounded py-2 px-3 text-base transition-colors duration-150 can-hover:hover:border-brand-500 can-hover:hover:bg-brand-50 w-full h-full bg-cover bg-center bg-no-repeat flex items-center justify-center "
+                                            style="outline: none;">
+                                            <div class="sr-only">Mettre à jour</div>
+                                            <span class="relative">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                                    class="w-8 text-gray-400">
+                                                    <path fill="currentColor"
+                                                        d="M132.31-140Q102-140 81-161t-21-51.31v-455.38Q60-698 81-719t51.31-21h122.15l74-80h223.85v60H354.62l-73.39 80H132.31q-5.39 0-8.85 3.46t-3.46 8.85v455.38q0 5.39 3.46 8.85t8.85 3.46h615.38q5.39 0 8.85-3.46t3.46-8.85v-340h60v340Q820-182 799-161t-51.31 21zM760-680v-80h-80v-60h80v-80h60v80h80v60h-80v80zM440-275.39q68.85 0 116.73-47.88T604.61-440t-47.88-116.73T440-604.61t-116.73 47.88T275.39-440t47.88 116.73T440-275.39m0-59.99q-44.31 0-74.46-30.16-30.16-30.15-30.16-74.46t30.16-74.46q30.15-30.16 74.46-30.16t74.46 30.16q30.16 30.15 30.16 74.46t-30.16 74.46q-30.15 30.16-74.46 30.16">
+
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex-grow max-w-full">
+                                    <div class="flex flex-wrap -mx-2">
+                                        <div class="w-full sm:flex-equal-width px-2">
+                                            <div class="py-2 ">
+                                                <div class="">
+                                                    <div class="flex items-center mb-1">
+                                                        <label for="focus-id-name-givenName"
+                                                            class="flex-grow truncate block font-medium text-gray-600 text-sm">Prénom</label>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                                    <input id="focus-id-name-givenName" data-s="Prénom" type="text"
+                                                        size="1" autocomplete="given-name" maxlength="1000"
+                                                        class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                        value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full sm:flex-equal-width px-2">
+                                            <div class="py-2 ">
+                                                <div class="">
+                                                    <div class="flex items-center mb-1"><label
+                                                            for="focus-id-name-familyName"
+                                                            class="flex-grow truncate block font-medium text-gray-600 text-sm">Nom
+                                                            de famille</label>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                                    <input id="focus-id-name-familyName" data-s="Nom de famille"
+                                                        type="text" size="1" autocomplete="family-name" maxlength="1000"
+                                                        class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                        value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 ">
+                                        <div class="">
+                                            <div class="flex items-center mb-1">
+                                                <label for=":r2a:"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Titre</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                            <input id=":r2a:" data-s="Titre" type="text" size="1" autocomplete="off"
+                                                placeholder="" maxlength="1000"
+                                                class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full px-2 sm:flex-equal-width">
+                                    <div class="py-2 ">
+                                        <div class="">
+                                            <div class="flex items-center mb-1">
+                                                <label for=":r2c:"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Adresse
+                                                    e-mail</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                            <input id=":r2c:" data-s="Adresse e-mail" type="text" size="1"
+                                                autocomplete="email" maxlength="1000"
+                                                class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full px-2 sm:flex-equal-width">
+                                    <div class="py-2 ">
+                                        <div class="">
+                                            <div class="flex items-center mb-1">
+                                                <label for=":r2e:"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Numéro
+                                                    de téléphone</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                            <input id=":r2e:" data-s="Numéro de téléphone" type="text" size="1"
+                                                autocomplete="tel" maxlength="1000"
+                                                class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full sm:flex-equal-width px-2">
+                                    <div class="py-2 ">
+                                        <div class="">
+                                            <div class="flex items-center mb-1"><label for="focus-id-address-address"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Adresse</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                            <input id="focus-id-address-address" data-s="Adresse" type="text" size="1"
+                                                autocomplete="street-address" maxlength="1000"
+                                                class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full sm:flex-equal-width px-2">
+                                    <div class="py-2 ">
+                                        <div class="">
+                                            <div class="flex items-center mb-1"><label for="focus-id-address-zipcode"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Code
+                                                    postal</label></div>
+                                        </div>
+                                        <div
+                                            class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                            <input id="focus-id-address-zipcode" data-s="Code postal" type="text"
+                                                size="1" autocomplete="postal-code" maxlength="1000"
+                                                class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:flex-equal-width px-2">
+                                    <div class="py-2 ">
+                                        <div class="">
+                                            <div class="flex items-center mb-1"><label for="focus-id-address-city"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Ville</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                            <input id="focus-id-address-city" data-s="Ville" type="text" size="1"
+                                                autocomplete="address-level2" maxlength="1000"
+                                                class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2 ">
+                                <div class="">
+                                    <div class="flex items-center mb-1"><label for=":r2m:"
+                                            class="flex-grow truncate block font-medium text-gray-600 text-sm">Date de
+                                            naissance</label><button type="button" class="flex group"
+                                            style="outline: none;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 -960 960 960"
+                                                class="rounded inline-block group-focus-visible:ring-2 ring-brand-200 w-4 text-gray-700 hover:text-gray-900 active:text-gray-900">
+                                                <path fill="currentColor"
+                                                    d="M480-189.233q-24.749 0-42.374-17.624-17.625-17.625-17.625-42.374t17.625-42.374T480-309.23t42.374 17.625 17.625 42.374-17.625 42.374Q504.749-189.233 480-189.233m0-230.768q-24.749 0-42.374-17.625T420.001-480t17.625-42.374T480-539.999t42.374 17.625T539.999-480t-17.625 42.374T480-420.001m0-230.769q-24.749 0-42.374-17.625-17.625-17.624-17.625-42.374 0-24.749 17.625-42.374 17.625-17.624 42.374-17.624t42.374 17.624 17.625 42.374-17.625 42.374T480-650.77">
+                                                </path>
+                                            </svg></button></div>
+                                </div>
+                                <div
+                                    class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100 cursor-text ">
+                                    <input id=":r2m:" data-s="Date de naissance" type="date" size="1" autocomplete="off"
+                                        maxlength="1000"
+                                        class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3 h-[42px] bg-transparent"
+                                        value="" autofocus="">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap pt-5 pb-3 gap-2"><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Lieu de naissance</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Permis de conduire</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Sexe</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Nationalité</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">État civil</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Site internet</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">LinkedIn</div>
+                                </button><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Champ personnalisé</div>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experiences professionnelles -->
+                <p class="text-gray-500"></p>
+                <p style="direction: ltr;"></p>
+                <div class="w-full flex relative flex-col">
+                    <div class="w-full border-b border-gray-200 collapsible-section">
+                                <div class="flex items-stretch w-full">
+                                    <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
+                                        <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
+                                            <span class="absolute h-0 block overflow-hidden whitespace-pre" style="font-family: inherit; font-weight: inherit; font-size: inherit;">Expérience professionnelle</span>
+                                            <input type="text" class="rounded-none max-w-full outline-none text-start overflow-hidden border-b bg-transparent cursor-text px-0 inline-block truncate border-transparent placeholder-opacity-1 py-1 my-2 placeholder-gray-800 focus:placeholder-gray-400 hover:border-gray-300 focus:border-brand-500" id="rename-field-focus-id-employment" placeholder="Expérience professionnelle" maxlength="1000" autocomplete="off" value="" style="width: 252px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
+                                        </div>
+                                    </div>
+                                    <div class="py-6 flex whitespace-nowrap items-start">
+                                        
+                                        <button class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base" type="button" data-testid="" style="outline: none;">
+                                            <span class="relative">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                                    <path fill="currentColor" d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
+
+                                                    </path>
+                                                </svg> -->
+                                                <img src="images/deroulant.png" alt="Icône de flèche"
+                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        <p class="text-gray-500"></p>
+                        <p style="direction: ltr;"></p>
+                        <div class="w-full mb-4">
+                            <div class="-mx-2 flex flex-col">
+                                <div class="rounded-lg bg-white border border-gray-400 m-2">
+                                    <div id="record-4c02f0d0-33cc-46eb-9c00-d7ad5f25f63e"
+                                        class="flex flex-col px-5 py-3">
+                                        <div class="py-2 ">
+                                            <div class="">
+                                                <div class="flex items-center mb-1">
+                                                    <label for=":r46:"
+                                                        class="flex-grow truncate block font-medium text-gray-600 text-sm">Poste</label>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                                <input id=":r46:" data-s="Poste" type="text" size="1" autocomplete="off"
+                                                    maxlength="1000"
+                                                    class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-wrap -mx-2">
+                                            <div class="w-full sm:flex-equal-width px-2">
+                                                <div class="py-2 ">
+                                                    <div class="">
+                                                        <div class="flex items-center mb-1">
+                                                            <label for="focus-id-employer-employer"
+                                                                class="flex-grow truncate block font-medium text-gray-600 text-sm">Employeur</label>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                                        <input id="focus-id-employer-employer" data-s="Employeur"
+                                                            type="text" size="1" autocomplete="off" maxlength="1000"
+                                                            class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:flex-equal-width px-2">
+                                                <div class="py-2 ">
+                                                    <div class="">
+                                                        <div class="flex items-center mb-1">
+                                                            <label for="focus-id-employer-city"
+                                                                class="flex-grow truncate block font-medium text-gray-600 text-sm">Ville</label>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
+                                                        <input id="focus-id-employer-city" data-s="Ville" type="text"
+                                                            size="1" autocomplete="off" maxlength="1000"
+                                                            class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-wrap -mx-2">
+                                            <div class="w-full sm:flex-equal-width px-2">
+                                                <div class="py-2">
+                                                    <div class="flex items-center mb-1">
+                                                        <label
+                                                            class="flex-grow truncate block font-medium text-gray-600 text-sm">Date
+                                                            de début</label>
+                                                    </div>
+                                                    <div class="flex flex-row">
+                                                        <div class="w-1/2 pe-2 -my-2">
+                                                            <div class="py-2">
+                                                                <div class="relative"><select data-value=""
+                                                                        id="focus-id-period-startdate"
+                                                                        class="w-full appearance-none border focus:border-brand-400 focus:bg-brand-50 rounded py-2 px-3 text-base text-base text-gray-400 border-transparent bg-gray-100"
+                                                                        style="outline: none;">
+                                                                        <option value="" class="bg-white text-gray-400">
+                                                                            Mois</option>
+                                                                        <option value="01"
+                                                                            class="bg-white text-gray-800">janvier
+                                                                        </option>
+                                                                        <option value="02"
+                                                                            class="bg-white text-gray-800">février
+                                                                        </option option value="03"
+                                                                            class="bg-white text-gray-800">mars</option>
+                                                                        <option value="04"
+                                                                            class="bg-white text-gray-800">avril
+                                                                        </option>
+                                                                        <option value="05"
+                                                                            class="bg-white text-gray-800">mai</option>
+                                                                        <option value="06"
+                                                                            class="bg-white text-gray-800">juin</option>
+                                                                        <option value="07"
+                                                                            class="bg-white text-gray-800">juillet
+                                                                        </option>
+                                                                        <option value="08"
+                                                                            class="bg-white text-gray-800">août</option>
+                                                                        <option value="09"
+                                                                            class="bg-white text-gray-800">septembre
+                                                                        </option>
+                                                                        <option value="10"
+                                                                            class="bg-white text-gray-800">octobre
+                                                                        </option>
+                                                                        <option value="11"
+                                                                            class="bg-white text-gray-800">novembre
+                                                                        </option>
+                                                                        <option value="12"
+                                                                            class="bg-white text-gray-800">décembre
+                                                                        </option>
+                                                                    </select>
+                                                                    <div
+                                                                        class="absolute flex top-0 end-0 bottom-0 px-2 pointer-events-none transform rotate-180">
+                                                                        <span class="relative"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 -960 960 960"
+                                                                                class="w-5 ms-auto text-gray-500 h-full">
+                                                                                <path fill="currentColor"
+                                                                                    d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
+                                                                                </path>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-1/2 -my-2">
+                                                            <div class="py-2">
+                                                                <div class="relative">
+                                                                    <select data-value="" id="focus-id-period-startdate"
+                                                                        class="w-full appearance-none border focus:border-brand-400 focus:bg-brand-50 rounded py-2 px-3 text-base text-base text-gray-400 border-transparent bg-gray-100"
+                                                                        style="outline: none;">
+                                                                        <option value="" class="bg-white text-gray-400">
+                                                                            Année</option>
+                                                                        <option value="2025"
+                                                                            class="bg-white text-gray-800">2025</option>
+                                                                        <option value="2024"
+                                                                            class="bg-white text-gray-800">2024</option>
+                                                                        <option value="2023"
+                                                                            class="bg-white text-gray-800">2023</option>
+                                                                        <option value="2022"
+                                                                            class="bg-white text-gray-800">2022</option>
+                                                                        <option value="2021"
+                                                                            class="bg-white text-gray-800">2021</option>
+                                                                        <option value="2020"
+                                                                            class="bg-white text-gray-800">2020</option>
+
+                                                                        <option value="2019"
+                                                                            class="bg-white text-gray-800">2019</option>
+                                                                        <option value="2018"
+                                                                            class="bg-white text-gray-800">2018</option>
+                                                                        <option value="2017"
+                                                                            class="bg-white text-gray-800">2017</option>
+                                                                        <option value="2016"
+                                                                            class="bg-white text-gray-800">2016</option>
+                                                                        <option value="2015"
+                                                                            class="bg-white text-gray-800">2015</option>
+                                                                        <option value="2014"
+                                                                            class="bg-white text-gray-800">2014</option>
+                                                                        <option value="2013"
+                                                                            class="bg-white text-gray-800">2013</option>
+
+                                                                        <option value="2012"
+                                                                            class="bg-white text-gray-800">2012</option>
+                                                                        <option value="2011"
+                                                                            class="bg-white text-gray-800">2011</option>
+                                                                        <option value="2010"
+                                                                            class="bg-white text-gray-800">2010</option>
+                                                                        <option value="2009"
+                                                                            class="bg-white text-gray-800">2009</option>
+                                                                        <option value="2008"
+                                                                            class="bg-white text-gray-800">2008</option>
+                                                                        <option value="2007"
+                                                                            class="bg-white text-gray-800">2007</option>
+                                                                        <option value="2006"
+                                                                            class="bg-white text-gray-800">2006</option>
+                                                                        <option value="2005"
+                                                                            class="bg-white text-gray-800">2005</option>
+                                                                        <option value="2004"
+                                                                            class="bg-white text-gray-800">2004</option>
+                                                                        <option value="2003"
+                                                                            class="bg-white text-gray-800">2003</option>
+                                                                        <option value="2002"
+                                                                            class="bg-white text-gray-800">2002</option>
+                                                                        <option value="2001"
+                                                                            class="bg-white text-gray-800">2001</option>
+                                                                        <option value="2000"
+                                                                            class="bg-white text-gray-800">2000</option>
+                                                                        <option value="1999"
+                                                                            class="bg-white text-gray-800">1999</option>
+                                                                        <option value="1998"
+                                                                            class="bg-white text-gray-800">1998</option>
+                                                                        <option value="1997"
+                                                                            class="bg-white text-gray-800">1997</option>
+                                                                        <option value="1996"
+                                                                            class="bg-white text-gray-800">1996</option>
+                                                                        <option value="1995"
+                                                                            class="bg-white text-gray-800">1995</option>
+                                                                        <option value="1994"
+                                                                            class="bg-white text-gray-800">1994</option>
+                                                                        <option value="1993"
+                                                                            class="bg-white text-gray-800">1993</option>
+
+                                                                        <option value="1992"
+                                                                            class="bg-white text-gray-800">1992</option>
+                                                                        <option value="1991"
+                                                                            class="bg-white text-gray-800">1991</option>
+                                                                        <option value="1990"
+                                                                            class="bg-white text-gray-800">1990</option>
+                                                                        <option value="1989"
+                                                                            class="bg-white text-gray-800">1989</option>
+                                                                        <option value="1988"
+                                                                            class="bg-white text-gray-800">1988</option>
+                                                                        <option value="1987"
+                                                                            class="bg-white text-gray-800">1987</option>
+                                                                        <option value="1986"
+                                                                            class="bg-white text-gray-800">1986</option>
+                                                                        <option value="1985"
+                                                                            class="bg-white text-gray-800">1985</option>
+                                                                        <option value="1984"
+                                                                            class="bg-white text-gray-800">1984</option>
+                                                                        <option value="1983"
+                                                                            class="bg-white text-gray-800">1983</option>
+                                                                        <option value="1982"
+                                                                            class="bg-white text-gray-800">1982</option>
+                                                                        <option value="1981"
+                                                                            class="bg-white text-gray-800">1981</option>
+                                                                        <option value="1980"
+                                                                            class="bg-white text-gray-800">1980</option>
+                                                                        <option value="1979"
+                                                                            class="bg-white text-gray-800">1979</option>
+                                                                        <option value="1978"
+                                                                            class="bg-white text-gray-800">1978</option>
+                                                                        <option value="1977"
+                                                                            class="bg-white text-gray-800">1977</option>
+                                                                        <option value="1976"
+                                                                            class="bg-white text-gray-800">1976</option>
+                                                                        <option value="1975"
+                                                                            class="bg-white text-gray-800">1975</option>
+                                                                        <option value="1974"
+                                                                            class="bg-white text-gray-800">1974</option>
+                                                                        <option value="1973"
+                                                                            class="bg-white text-gray-800">1973</option>
+                                                                        <option value="1972"
+                                                                            class="bg-white text-gray-800">1972</option>
+                                                                        <option value="1971"
+                                                                            class="bg-white text-gray-800">1971</option>
+                                                                        <option value="1970"
+                                                                            class="bg-white text-gray-800">1970</option>
+                                                                        <option value="1969"
+                                                                            class="bg-white text-gray-800">1969</option>
+                                                                        <option value="1968"
+                                                                            class="bg-white text-gray-800">1968</option>
+                                                                        <option value="1967"
+                                                                            class="bg-white text-gray-800">1967</option>
+                                                                        <option value="1966"
+                                                                            class="bg-white text-gray-800">1966</option>
+                                                                        <option value="1965"
+                                                                            class="bg-white text-gray-800">1965</option>
+                                                                        <option value="1964"
+                                                                            class="bg-white text-gray-800">1964</option>
+                                                                        <option value="1963"
+                                                                            class="bg-white text-gray-800">1963</option>
+                                                                        <option value="1962"
+                                                                            class="bg-white text-gray-800">1962</option>
+                                                                        <option value="1961"
+                                                                            class="bg-white text-gray-800">1961</option>
+                                                                        <option value="1960"
+                                                                            class="bg-white text-gray-800">1960</option>
+                                                                        <option value="1959"
+                                                                            class="bg-white text-gray-800">1959</option>
+                                                                        <option value="1958"
+                                                                            class="bg-white text-gray-800">1958</option>
+                                                                        <option value="1957"
+                                                                            class="bg-white text-gray-800">1957</option>
+                                                                        <option value="1956"
+                                                                            class="bg-white text-gray-800">1956</option>
+                                                                        <option value="1955"
+                                                                            class="bg-white text-gray-800">1955</option>
+                                                                        <option value="1954"
+                                                                            class="bg-white text-gray-800">1954</option>
+                                                                        <option value="1953"
+                                                                            class="bg-white text-gray-800">1953</option>
+                                                                        <option value="1952"
+                                                                            class="bg-white text-gray-800">1952</option>
+                                                                        <option value="1951"
+                                                                            class="bg-white text-gray-800">1951</option>
+                                                                        <option value="1950"
+                                                                            class="bg-white text-gray-800">1950</option>
+                                                                        <option value="1949"
+                                                                            class="bg-white text-gray-800">1949</option>
+                                                                        <option value="1948"
+                                                                            class="bg-white text-gray-800">1948</option>
+                                                                        <option value="1947"
+                                                                            class="bg-white text-gray-800">1947</option>
+                                                                        <option value="1946"
+                                                                            class="bg-white text-gray-800">1946</option>
+                                                                        <option value="1945"
+                                                                            class="bg-white text-gray-800">1945</option>
+                                                                        <option value="1944"
+                                                                            class="bg-white text-gray-800">1944</option>
+                                                                        <option value="1943"
+                                                                            class="bg-white text-gray-800">1943</option>
+                                                                        <option value="1942"
+                                                                            class="bg-white text-gray-800">1942</option>
+                                                                        <option value="1941"
+                                                                            class="bg-white text-gray-800">1941</option>
+                                                                        <option value="1940"
+                                                                            class="bg-white text-gray-800">1940</option>
+                                                                        <option value="1939"
+                                                                            class="bg-white text-gray-800">1939</option>
+                                                                        <option value="1938"
+                                                                            class="bg-white text-gray-800">1938</option>
+                                                                        <option value="1937"
+                                                                            class="bg-white text-gray-800">1937</option>
+                                                                        <option value="1936"
+                                                                            class="bg-white text-gray-800">1936</option>
+                                                                        <option value="1935"
+                                                                            class="bg-white text-gray-800">1935</option>
+                                                                        <option value="1934"
+                                                                            class="bg-white text-gray-800">1934</option>
+                                                                        <option value="1933"
+                                                                            class="bg-white text-gray-800">1933</option>
+                                                                        <option value="1932"
+                                                                            class="bg-white text-gray-800">1932</option>
+                                                                        <option value="1931"
+                                                                            class="bg-white text-gray-800">1931</option>
+                                                                        <option value="1930"
+                                                                            class="bg-white text-gray-800">1930</option>
+                                                                        <option value="1929"
+                                                                            class="bg-white text-gray-800">1929</option>
+                                                                        <option value="1928"
+                                                                            class="bg-white text-gray-800">1928</option>
+                                                                        <option value="1927"
+                                                                            class="bg-white text-gray-800">1927</option>
+                                                                        <option value="1926"
+                                                                            class="bg-white text-gray-800">1926</option>
+                                                                        <option value="1925"
+                                                                            class="bg-white text-gray-800">1925</option>
+                                                                    </select>
+                                                                    <div
+                                                                        class="absolute flex top-0 end-0 bottom-0 px-2 pointer-events-none transform rotate-180">
+                                                                        <span class="relative"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 -960 960 960"
+                                                                                class="w-5 ms-auto text-gray-500 h-full">
+                                                                                <path fill="currentColor"
+                                                                                    d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
+                                                                                </path>
+                                                                            </svg></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full sm:flex-equal-width px-2">
+                                                <div class="py-2">
+                                                    <div class="flex items-center mb-1"><label
+                                                            class="flex-grow truncate block font-medium text-gray-600 text-sm">Date
+                                                            de fin</label><button type="button"
+                                                            class="inline-flex items-center text-sm group"><span
+                                                                class="relative">
+                                                                <div class="mr-1">
+                                                                    <div
+                                                                        class="w-7 h-4 px-[2px] relative rounded-full flex items-center bg-gray-400">
+                                                                        <input type="checkbox"
+                                                                            class="cursor-pointer appearance-none rounded-full absolute left-px top-px right-px bottom-px focus-visible:ring-4 ring-brand"
+                                                                            id="f7a5e8f7-f954-4040-801b-792df8956479"><span
+                                                                            class="w-3 h-3 block rounded-full shadow-sm border bg-white border"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </span>ce jour</button></div>
+                                                    <div class="flex flex-row">
+                                                        <div class="w-1/2 pe-2 -my-2">
+                                                            <div class="py-2">
+                                                                <div class="relative"><select data-value=""
+                                                                        id="focus-id-period-enddate"
+                                                                        class="w-full appearance-none border focus:border-brand-400 focus:bg-brand-50 rounded py-2 px-3 text-base text-base text-gray-400 border-transparent bg-gray-100"
+                                                                        style="outline: none;">
+                                                                        <option value="" class="bg-white text-gray-400">
+                                                                            Mois</option>
+                                                                        <option value="01"
+                                                                            class="bg-white text-gray-800">janvier
+                                                                        </option>
+                                                                        <option value="02"
+                                                                            class="bg-white text-gray-800">février
+                                                                        </option>
+                                                                        <option value="03"
+                                                                            class="bg-white text-gray-800">mars</option>
+                                                                        <option value="04"
+                                                                            class="bg-white text-gray-800">avril
+                                                                        </option>
+                                                                        <option value="05"
+                                                                            class="bg-white text-gray-800">mai</option>
+                                                                        <option value="06"
+                                                                            class="bg-white text-gray-800">juin</option>
+                                                                        <option value="07"
+                                                                            class="bg-white text-gray-800">juillet
+                                                                        </option>
+                                                                        <option value="08"
+                                                                            class="bg-white text-gray-800">août</option>
+                                                                        <option value="09"
+                                                                            class="bg-white text-gray-800">septembre
+                                                                        </option>
+                                                                        <option value="10"
+                                                                            class="bg-white text-gray-800">octobre
+                                                                        </option>
+                                                                        <option value="11"
+                                                                            class="bg-white text-gray-800">novembre
+                                                                        </option>
+                                                                        <option value="12"
+                                                                            class="bg-white text-gray-800">décembre
+                                                                        </option>
+                                                                    </select>
+                                                                    <div
+                                                                        class="absolute flex top-0 end-0 bottom-0 px-2 pointer-events-none transform rotate-180">
+                                                                        <span class="relative"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 -960 960 960"
+                                                                                class="w-5 ms-auto text-gray-500 h-full">
+                                                                                <path fill="currentColor"
+                                                                                    d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
+                                                                                </path>
+                                                                            </svg></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-1/2 -my-2">
+                                                            <div class="py-2">
+                                                                <div class="relative"><select data-value=""
+                                                                        id="focus-id-period-enddate"
+                                                                        class="w-full appearance-none border focus:border-brand-400 focus:bg-brand-50 rounded py-2 px-3 text-base text-base text-gray-400 border-transparent bg-gray-100"
+                                                                        style="outline: none;">
+                                                                        <option value="" class="bg-white text-gray-400">
+                                                                            Année</option>
+                                                                        <option value="2030"
+                                                                            class="bg-white text-gray-800">2030</option>
+                                                                        <option value="2029"
+                                                                            class="bg-white text-gray-800">2029</option>
+                                                                        <option value="2028"
+                                                                            class="bg-white text-gray-800">2028</option>
+                                                                        <option value="2027"
+                                                                            class="bg-white text-gray-800">2027</option>
+                                                                        <option value="2026"
+                                                                            class="bg-white text-gray-800">2026</option>
+                                                                        <option value="2025"
+                                                                            class="bg-white text-gray-800">2025</option>
+                                                                        <option value="2024"
+                                                                            class="bg-white text-gray-800">2024</option>
+                                                                        <option value="2023"
+                                                                            class="bg-white text-gray-800">2023</option>
+                                                                        <option value="2022"
+                                                                            class="bg-white text-gray-800">2022</option>
+                                                                        <option value="2021"
+                                                                            class="bg-white text-gray-800">2021</option>
+                                                                        <option value="2020"
+                                                                            class="bg-white text-gray-800">2020</option>
+                                                                        <option value="2019"
+                                                                            class="bg-white text-gray-800">2019</option>
+                                                                        <option value="2018"
+                                                                            class="bg-white text-gray-800">2018</option>
+                                                                        <option value="2017"
+                                                                            class="bg-white text-gray-800">2017</option>
+                                                                        <option value="2016"
+                                                                            class="bg-white text-gray-800">2016</option>
+                                                                        <option value="2015"
+                                                                            class="bg-white text-gray-800">2015</option>
+                                                                        <option value="2014"
+                                                                            class="bg-white text-gray-800">2014</option>
+                                                                        <option value="2013"
+                                                                            class="bg-white text-gray-800">2013</option>
+                                                                        <option value="2012"
+                                                                            class="bg-white text-gray-800">2012</option>
+                                                                        <option value="2011"
+                                                                            class="bg-white text-gray-800">2011</option>
+                                                                        <option value="2010"
+                                                                            class="bg-white text-gray-800">2010</option>
+                                                                        <option value="2009"
+                                                                            class="bg-white text-gray-800">2009</option>
+                                                                        <option value="2008"
+                                                                            class="bg-white text-gray-800">2008</option>
+                                                                        <option value="2007"
+                                                                            class="bg-white text-gray-800">2007</option>
+                                                                        <option value="2006"
+                                                                            class="bg-white text-gray-800">2006</option>
+                                                                        <option value="2005"
+                                                                            class="bg-white text-gray-800">2005</option>
+                                                                        <option value="2004"
+                                                                            class="bg-white text-gray-800">2004</option>
+                                                                        <option value="2003"
+                                                                            class="bg-white text-gray-800">2003</option>
+                                                                        <option value="2002"
+                                                                            class="bg-white text-gray-800">2002</option>
+                                                                        <option value="2001"
+                                                                            class="bg-white text-gray-800">2001</option>
+                                                                        <option value="2000"
+                                                                            class="bg-white text-gray-800">2000</option>
+                                                                        <option value="1999"
+                                                                            class="bg-white text-gray-800">1999</option>
+                                                                        <option value="1998"
+                                                                            class="bg-white text-gray-800">1998</option>
+                                                                        <option value="1997"
+                                                                            class="bg-white text-gray-800">1997</option>
+                                                                        <option value="1996"
+                                                                            class="bg-white text-gray-800">1996</option>
+                                                                        <option value="1995"
+                                                                            class="bg-white text-gray-800">1995</option>
+                                                                        <option value="1994"
+                                                                            class="bg-white text-gray-800">1994</option>
+                                                                        <option value="1993"
+                                                                            class="bg-white text-gray-800">1993</option>
+                                                                        <option value="1992"
+                                                                            class="bg-white text-gray-800">1992</option>
+                                                                        <option value="1991"
+                                                                            class="bg-white text-gray-800">1991</option>
+                                                                        <option value="1990"
+                                                                            class="bg-white text-gray-800">1990</option>
+                                                                        <option value="1989"
+                                                                            class="bg-white text-gray-800">1989</option>
+                                                                        <option value="1988"
+                                                                            class="bg-white text-gray-800">1988</option>
+                                                                        <option value="1987"
+                                                                            class="bg-white text-gray-800">1987</option>
+                                                                        <option value="1986"
+                                                                            class="bg-white text-gray-800">1986</option>
+                                                                        <option value="1985"
+                                                                            class="bg-white text-gray-800">1985</option>
+                                                                        <option value="1984"
+                                                                            class="bg-white text-gray-800">1984</option>
+                                                                        <option value="1983"
+                                                                            class="bg-white text-gray-800">1983</option>
+                                                                        <option value="1982"
+                                                                            class="bg-white text-gray-800">1982</option>
+                                                                        <option value="1981"
+                                                                            class="bg-white text-gray-800">1981</option>
+                                                                        <option value="1980"
+                                                                            class="bg-white text-gray-800">1980</option>
+                                                                        <option value="1979"
+                                                                            class="bg-white text-gray-800">1979</option>
+                                                                        <option value="1978"
+                                                                            class="bg-white text-gray-800">1978</option>
+                                                                        <option value="1977"
+                                                                            class="bg-white text-gray-800">1977</option>
+                                                                        <option value="1976"
+                                                                            class="bg-white text-gray-800">1976</option>
+                                                                        <option value="1975"
+                                                                            class="bg-white text-gray-800">1975</option>
+                                                                        <option value="1974"
+                                                                            class="bg-white text-gray-800">1974</option>
+                                                                        <option value="1973"
+                                                                            class="bg-white text-gray-800">1973</option>
+                                                                        <option value="1972"
+                                                                            class="bg-white text-gray-800">1972</option>
+                                                                        <option value="1971"
+                                                                            class="bg-white text-gray-800">1971</option>
+                                                                        <option value="1970"
+                                                                            class="bg-white text-gray-800">1970</option>
+                                                                        <option value="1969"
+                                                                            class="bg-white text-gray-800">1969</option>
+                                                                        <option value="1968"
+                                                                            class="bg-white text-gray-800">1968</option>
+                                                                        <option value="1967"
+                                                                            class="bg-white text-gray-800">1967</option>
+                                                                        <option value="1966"
+                                                                            class="bg-white text-gray-800">1966</option>
+                                                                        <option value="1965"
+                                                                            class="bg-white text-gray-800">1965</option>
+                                                                        <option value="1964"
+                                                                            class="bg-white text-gray-800">1964</option>
+                                                                        <option value="1963"
+                                                                            class="bg-white text-gray-800">1963</option>
+                                                                        <option value="1962"
+                                                                            class="bg-white text-gray-800">1962</option>
+                                                                        <option value="1961"
+                                                                            class="bg-white text-gray-800">1961</option>
+                                                                        <option value="1960"
+                                                                            class="bg-white text-gray-800">1960</option>
+                                                                        <option value="1959"
+                                                                            class="bg-white text-gray-800">1959</option>
+                                                                        <option value="1958"
+                                                                            class="bg-white text-gray-800">1958</option>
+                                                                        <option value="1957"
+                                                                            class="bg-white text-gray-800">1957</option>
+                                                                        <option value="1956"
+                                                                            class="bg-white text-gray-800">1956</option>
+                                                                        <option value="1955"
+                                                                            class="bg-white text-gray-800">1955</option>
+                                                                        <option value="1954"
+                                                                            class="bg-white text-gray-800">1954</option>
+                                                                        <option value="1953"
+                                                                            class="bg-white text-gray-800">1953</option>
+                                                                        <option value="1952"
+                                                                            class="bg-white text-gray-800">1952</option>
+                                                                        <option value="1951"
+                                                                            class="bg-white text-gray-800">1951</option>
+                                                                        <option value="1950"
+                                                                            class="bg-white text-gray-800">1950</option>
+                                                                        <option value="1949"
+                                                                            class="bg-white text-gray-800">1949</option>
+                                                                        <option value="1948"
+                                                                            class="bg-white text-gray-800">1948</option>
+                                                                        <option value="1947"
+                                                                            class="bg-white text-gray-800">1947</option>
+                                                                        <option value="1946"
+                                                                            class="bg-white text-gray-800">1946</option>
+                                                                        <option value="1945"
+                                                                            class="bg-white text-gray-800">1945</option>
+                                                                        <option value="1944"
+                                                                            class="bg-white text-gray-800">1944</option>
+                                                                        <option value="1943"
+                                                                            class="bg-white text-gray-800">1943</option>
+                                                                        <option value="1942"
+                                                                            class="bg-white text-gray-800">1942</option>
+                                                                        <option value="1941"
+                                                                            class="bg-white text-gray-800">1941</option>
+                                                                        <option value="1940"
+                                                                            class="bg-white text-gray-800">1940</option>
+                                                                        <option value="1939"
+                                                                            class="bg-white text-gray-800">1939</option>
+                                                                        <option value="1938"
+                                                                            class="bg-white text-gray-800">1938</option>
+                                                                        <option value="1937"
+                                                                            class="bg-white text-gray-800">1937</option>
+                                                                        <option value="1936"
+                                                                            class="bg-white text-gray-800">1936</option>
+                                                                        <option value="1935"
+                                                                            class="bg-white text-gray-800">1935</option>
+                                                                        <option value="1934"
+                                                                            class="bg-white text-gray-800">1934</option>
+                                                                        <option value="1933"
+                                                                            class="bg-white text-gray-800">1933</option>
+                                                                        <option value="1932"
+                                                                            class="bg-white text-gray-800">1932</option>
+                                                                        <option value="1931"
+                                                                            class="bg-white text-gray-800">1931</option>
+                                                                        <option value="1930"
+                                                                            class="bg-white text-gray-800">1930</option>
+                                                                        <option value="1929"
+                                                                            class="bg-white text-gray-800">1929</option>
+                                                                        <option value="1928"
+                                                                            class="bg-white text-gray-800">1928</option>
+                                                                        <option value="1927"
+                                                                            class="bg-white text-gray-800">1927</option>
+                                                                        <option value="1926"
+                                                                            class="bg-white text-gray-800">1926</option>
+                                                                        <option value="1925"
+                                                                            class="bg-white text-gray-800">1925</option>
+                                                                    </select>
+                                                                    <div
+                                                                        class="absolute flex top-0 end-0 bottom-0 px-2 pointer-events-none transform rotate-180">
+                                                                        <span class="relative"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 -960 960 960"
+                                                                                class="w-5 ms-auto text-gray-500 h-full">
+                                                                                <path fill="currentColor"
+                                                                                    d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
+                                                                                </path>
+                                                                            </svg></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-2">
+                                            <div class="flex items-center mb-1"><label
+                                                    for="cdc24bb2-3ac6-4dcc-a680-0f535e24235e"
+                                                    class="flex-grow truncate block font-medium text-gray-600 text-sm">Description</label>
+                                            </div>
+                                            <div
+                                                class="relative flex flex-col justify-between rounded pt-2 px-3 text-base border focus-within:border-brand-400 focus-within:bg-brand-50 group  border-transparent bg-gray-100">
+                                                <div class="outline-none resize-none pointer-events-all"
+                                                    contenteditable="true" role="textbox" spellcheck="true"
+                                                    style="min-height: 45px; tab-size: 1; user-select: text; white-space: pre-wrap; word-break: break-word;"
+                                                    data-lexical-editor="true">
+                                                    <p style="text-align: left;"><br></p>
+                                                </div>
+                                                <p class="font-light text-gray-500 absolute pointer-events-none">
+                                                    Commencez à rédiger ici...</p>
+                                                <div
+                                                    class="flex sm:justify-between flex-col-reverse mt-3 sm:flex-row sm:items-center sm:gap-2 border-gray-200 border-t">
+                                                    <div
+                                                        class="bg-gray-100 bottom-0  py-2 group-focus-within:bg-brand-50 flex-wrap flex bi-space-x-1 items-center ">
+                                                        <div title=""><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-transparent can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M354.308-215.001q-25.307 0-43.038-17.73-17.73-17.731-17.73-43.038v-408.462q0-25.307 17.73-43.038 17.731-17.73 43.038-17.73H488q61.153 0 110.576 38.077t49.423 102.538q0 44.845-21.654 73.115t-46.654 41.038q30.769 10.616 58.769 41.962t28 84.423q0 76.691-56.538 112.768T496-215.001zm25.229-79.69h113.232q47.231 0 66.77-26.231t19.539-50.309-19.539-50.308-68.616-26.231H379.537zm0-230.308h103.77q36.462 0 57.809-20.846 21.347-20.847 21.347-49.924 0-30.924-22.578-50.54-22.577-19.615-55.347-19.615H379.537z">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                        <div title=""><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-transparent can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M251.923-215.001q-15.184 0-25.668-10.494t-10.485-25.691q0-15.198 10.485-25.66t25.668-10.461h116.539l129.616-385.386H381.539q-15.184 0-25.668-10.494t-10.485-25.692q0-15.197 10.485-25.659t25.668-10.461h293.846q15.184 0 25.669 10.494 10.484 10.494 10.484 25.691 0 15.198-10.484 25.66t-25.669 10.461H571.153L441.537-287.307h104.232q15.184 0 25.668 10.494t10.485 25.692-10.485 25.659q-10.484 10.461-25.668 10.461z">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                        <div title=""><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-transparent can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M243.846-155.003q-12.749 0-21.374-8.628t-8.625-21.384 8.625-21.371 21.374-8.615h472.308q12.749 0 21.374 8.629t8.625 21.384-8.625 21.37-21.374 8.615zM480-298.848q-93.307 0-145.653-56.653t-52.346-151.806v-279.385q0-15.14 11.172-25.954 11.171-10.814 26.306-10.814t25.905 10.814q10.769 10.814 10.769 25.954v283.077q0 60.615 32.231 97.154T480-369.922t91.616-36.539 32.231-97.154v-283.077q0-15.14 11.172-25.954 11.171-10.814 26.307-10.814t25.904 10.814 10.769 25.954v279.385q0 95.153-52.346 151.806T480-298.848">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                        <div class="w-px h-6 sm:h-8 bg-gray-300"></div>
+                                                        <div title=""><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 border-transparent text-gray-300 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base cursor-not-allowed"
+                                                                disabled="" type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M281.539-298.463q-75.338 0-128.438-53.093t-53.1-128.422 53.1-128.444 128.438-53.115h120.769q12.75 0 21.374 8.629 8.625 8.628 8.625 21.384t-8.625 21.37-21.374 8.615H281.493q-50.339 0-85.916 35.577T160-480t35.577 85.962 85.916 35.577h120.815q12.75 0 21.374 8.628 8.625 8.629 8.625 21.384t-8.625 21.371-21.374 8.615zM360-450.001q-12.75 0-21.374-8.628-8.625-8.629-8.625-21.384t8.625-21.371T360-509.999h240q12.75 0 21.375 8.628t8.624 21.384-8.624 21.371q-8.625 8.615-21.375 8.615zm197.692 151.538q-12.75 0-21.374-8.629-8.625-8.628-8.625-21.384t8.625-21.37q8.624-8.615 21.374-8.615h120.815q50.339 0 85.916-35.577T800-480t-35.577-85.962-85.916-35.577H557.692q-12.75 0-21.374-8.628-8.625-8.629-8.625-21.384t8.625-21.371 21.374-8.615h120.769q75.338 0 128.438 53.093t53.1 128.422-53.1 128.444-128.438 53.115z">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                        <div class="w-px h-6 sm:h-8 bg-gray-300"></div>
+                                                        <div title=""><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-transparent can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M402.308-210.001q-12.75 0-21.375-8.628t-8.624-21.384 8.624-21.371q8.625-8.615 21.375-8.615h387.691q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615zm0-240q-12.75 0-21.375-8.628t-8.624-21.384 8.624-21.371q8.625-8.615 21.375-8.615h387.691q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615zm0-240q-12.75 0-21.375-8.628t-8.624-21.384 8.624-21.371q8.625-8.615 21.375-8.615h387.691q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615zM206.539-173.463q-27.447 0-46.992-19.545-19.546-19.545-19.546-46.992t19.546-46.992q19.545-19.545 46.992-19.545t46.992 19.545T273.076-240t-19.545 46.992-46.992 19.545m0-240q-27.447 0-46.992-19.545-19.546-19.545-19.546-46.992t19.546-46.992q19.545-19.545 46.992-19.545t46.992 19.545T273.076-480t-19.545 46.992-46.992 19.545m0-240q-27.447 0-46.992-19.545-19.546-19.545-19.546-46.992t19.546-46.992q19.545-19.545 46.992-19.545t46.992 19.545T273.076-720t-19.545 46.992-46.992 19.545">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                        <div title=""><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-transparent can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M163.847-100.001q-10.333 0-17.089-6.752-6.757-6.751-6.757-17.076 0-10.326 6.757-17.095t17.089-6.769h76.154v-42.308h-36.154q-10.333 0-17.089-6.752-6.757-6.751-6.757-17.076 0-10.326 6.757-17.095t17.089-6.769h36.154v-42.308h-76.154q-10.333 0-17.089-6.752-6.757-6.751-6.757-17.076 0-10.326 6.757-17.095t17.089-6.769h90q14.385 0 24.115 9.731 9.731 9.73 9.731 24.115v47.693q0 14.384-9.731 24.115t-24.115 9.73q14.385 0 24.115 9.731 9.731 9.731 9.731 24.115v44.616q0 14.384-9.731 24.115t-24.115 9.731zm3.462-266.153q-11.461 0-19.385-7.923-7.923-7.923-7.923-19.385V-470q0-14.384 9.731-24.115t24.115-9.731h66.154v-42.308h-76.154q-10.333 0-17.089-6.752-6.757-6.751-6.757-17.076t6.757-17.095q6.756-6.769 17.089-6.769h90q14.385 0 24.115 9.731 9.731 9.731 9.731 24.115v70q0 14.384-9.731 24.115t-24.115 9.731h-66.154v42.308h76.154q10.333 0 17.09 6.752t6.756 17.076-6.756 17.095q-6.757 6.769-17.09 6.769zm56.556-266.153q-10.325 0-17.094-6.756t-6.77-17.09v-156.154h-36.154q-10.333 0-17.089-6.751-6.757-6.752-6.757-17.077t6.757-17.094q6.756-6.77 17.089-6.77h56.923q11.461 0 19.192 7.731t7.731 19.192v176.923q0 10.333-6.751 17.09t-17.077 6.756m178.443 422.306q-12.75 0-21.375-8.628t-8.624-21.384 8.624-21.371q8.625-8.615 21.375-8.615h387.691q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615zm0-240q-12.75 0-21.375-8.628t-8.624-21.384 8.624-21.371q8.625-8.615 21.375-8.615h387.691q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615zm0-240q-12.75 0-21.375-8.628t-8.624-21.384 8.624-21.371q8.625-8.615 21.375-8.615h387.691q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615z">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                        <div class="w-px h-6 sm:h-8 bg-gray-300"></div>
+                                                        <div><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-transparent can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-0.5 sm:py-1 ps-0.5 pe-0.5 sm:ps-1 sm:pe-1 text-sm sm:text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-5 sm:h-6 w-5 sm:w-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M170.001-140.001q-12.75 0-21.375-8.629t-8.625-21.384 8.625-21.371T170.001-200h619.998q12.75 0 21.375 8.629t8.625 21.384-8.625 21.37-21.375 8.616zm0-155q-12.75 0-21.375-8.629t-8.625-21.384 8.625-21.37T170.001-355h379.998q12.75 0 21.375 8.629t8.625 21.384-8.625 21.371-21.375 8.615zm0-155q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h619.998q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615zm0-154.999q-12.75 0-21.375-8.629t-8.625-21.384 8.625-21.371 21.375-8.615h379.998q12.75 0 21.375 8.629t8.625 21.384-8.625 21.37T549.999-605zm0-155q-12.75 0-21.375-8.629t-8.625-21.384 8.625-21.37 21.375-8.616h619.998q12.75 0 21.375 8.629t8.625 21.384-8.625 21.371T789.999-760z">
+                                                                        </path>
+                                                                    </svg></span><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 -960 960 960"
+                                                                        class="pointer-events-none px-1 flex-shrink-0 box-content h-5 sm:h-6 ">
+                                                                        <path fill="currentColor"
+                                                                            d="M480-373.539q-7.231 0-13.461-2.308t-11.846-7.923L274.924-563.539q-8.308-8.307-8.5-20.884t8.5-21.269T296-614.384t21.076 8.692L480-442.768l162.924-162.924q8.307-8.307 20.884-8.5t21.268 8.5q8.693 8.692 8.693 21.077 0 12.384-8.693 21.076L505.307-383.77q-5.615 5.615-11.846 7.923T480-373.539">
+                                                                        </path>
+                                                                    </svg></span></button></div>
+                                                    </div>
+                                                    <div
+                                                        class="bg-gray-100 bottom-0  py-2 group-focus-within:bg-brand-50 flex-wrap flex bi-space-x-1 items-center ">
+                                                        <div class="flex items-stretch group w-full sm:w-auto"><button
+                                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center  w-full sm:w-auto bg-white bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                                                type="button" data-testid=""
+                                                                style="outline: none;"><span class="relative"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        fill="currentColor" viewBox="0 0 24 24"
+                                                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6  !w-5 !h-5 !px-1">
+                                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                                        <path
+                                                                            d="m19 9 1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25zM11.5 9.5 9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12zm-1.51 3.49L9 15.17l-.99-2.18L5.83 12l2.18-.99L9 8.83l.99 2.18 2.18.99z">
+                                                                        </path>
+                                                                    </svg></span>
+                                                                
+                                                            </button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pb-5 pe-5 whitespace-nowrap flex justify-end items-center"><button
+                                            class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base"
+                                            type="button" data-testid="" style="outline: none;"><span
+                                                class="relative"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 -960 960 960"
+                                                    class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                                    <path fill="currentColor"
+                                                        d="M292.309-140.001q-29.923 0-51.115-21.193-21.193-21.192-21.193-51.115V-720h-10q-12.769 0-21.384-8.615t-8.616-21.384 8.616-21.384q8.615-8.616 21.384-8.616H360q0-14.692 10.346-25.038t25.038-10.346h169.232q14.692 0 25.038 10.346T600-779.999h149.999q12.769 0 21.384 8.616t8.616 21.384-8.616 21.384Q762.768-720 749.999-720h-10v507.691q0 29.923-21.193 51.115-21.192 21.193-51.115 21.193zM680-720H280v507.691q0 5.385 3.462 8.847t8.847 3.462h375.382q5.385 0 8.847-3.462t3.462-8.847zM376.155-280h59.999v-360h-59.999zm147.691 0h59.999v-360h-59.999zM280-720v520z">
+                                                    </path>
+                                                </svg></span><span class="sr-only">Supprimer</span></button>
+                                        <div class="ms-2"><button
+                                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-brand-500 active:bg-brand-300 can-hover:active:bg-brand-300 text-white border-transparent can-hover:hover:bg-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                                type="button" data-testid="" style="outline: none;"><span
+                                                    class="relative"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 -960 960 960"
+                                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                                        <path fill="currentColor"
+                                                            d="m382-339.384 345.539-345.538q8.923-8.923 21.192-9.116t21.576 9.116q9.308 9.307 9.308 21.384t-9.308 21.384l-363 362.999Q396.461-268.309 382-268.309t-25.307-10.846l-167-166.999q-8.923-8.923-8.808-21.192t9.423-21.576 21.384-9.308 21.384 9.308z">
+                                                        </path>
+                                                    </svg></span>
+                                                <div class="truncate h-6 ms-0.5  ">Terminé</div>
+                                            </button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 flex justify-between gap-2"><button
+                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
+                                            <path fill="currentColor"
+                                                d="M450.001-450.001h-200q-12.75 0-21.375-8.628t-8.625-21.384 8.625-21.371 21.375-8.615h200v-200q0-12.75 8.628-21.375t21.384-8.625 21.371 8.625 8.615 21.375v200h200q12.75 0 21.375 8.628t8.625 21.384-8.625 21.371-21.375 8.615h-200v200q0 12.75-8.628 21.375t-21.384 8.625-21.371-8.625-8.615-21.375z">
+                                            </path>
+                                        </svg></span>
+                                    <div class="truncate h-6 ms-0.5  ">Ajouter une expérience professionnelle</div>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- formation -->
+                <h1>FORMATION</h1>
+                <div class="" id="formation">
+                    <div>
+                        <label for="diplome">Diplomes obtenus</label>
+                        <input type="text" id="diplome" class="border-1">
+                    </div>
+
+                    <div>
+                        <label for="etablissement">Etablissement</label>
+                        <input type="text" id="etablissement" class="border-1">
+                    </div>
+
+                    <div>
+                        <label for="obtention">Annee obtention</label>
+                        <input type="date" id="annee_obtention" class="border-1">
+                    </div>
+
+                    <button onclick="Ajouterformation()"><img src="Images/PLUS.png" alt="icone"></button>
+
+                </div>
+
+                <!-- references -->
+                <h1>REFERENCES</h1>
+                <div class="" id="references">
+                    <div>
+                        <label for="nom">NOM</label>
+                        <input type="text" placeholder="entrer le nom du referent" class="border-1">
+                    </div>
+
+                    <div>
+                        <label for="poste">Poste</label>
+                        <input type="text" name="postereferent" id="postereferent" placeholder="enter le poste"
+                            class="border-1">
+                    </div>
+
+                    <div>
+                        <label for="contact">Contact</label>
+                        <input type="number" name="contact" id="contact" class="border-1">
+                    </div>
+
+                    <button onclick="ajouterreference()"><img src="Images/PLUS.png" alt="icone"
+                            class="h-5 w-5"></button>
+
+                </div>
+            </section>
+
+            <section class="bg-amber-200 w-1/3">
+
+                <label for="photo">Photo de profil</label>
                 <input type="file" name="profil" id="profil" class="border- 1">
 
-            <!-- competences -->
-            <h1 class="color-orange">COMPETENCES</h1>
-            <div class=" flex items-center" id="competences">
-                <input type="text" placeholder="skills" class="border-2 border-gray-300 rounded px-3 py-2 ">
-                <select name="competences" class="border border-gray-300 rounded px-3 py-2 ml-2" id="comp">
-                    <option value="basic">Debutant</option>
-                    <option value="Inter">Intermediaire</option>
-                    <option value="Bien">Bien</option>
-                    <option value="Tres bien">Tres bien</option>
-                    <option value="Excellent">Excellent</option>
-                </select>
+                <!-- competences -->
+                <h1 class="color-orange">COMPETENCES</h1>
+                <div class=" flex items-center" id="competences">
+                    <input type="text" placeholder="skills" class="border-2 border-gray-300 rounded px-3 py-2 ">
+                    <select name="competences" class="border border-gray-300 rounded px-3 py-2 ml-2" id="comp">
+                        <option value="basic">Debutant</option>
+                        <option value="Inter">Intermediaire</option>
+                        <option value="Bien">Bien</option>
+                        <option value="Tres bien">Tres bien</option>
+                        <option value="Excellent">Excellent</option>
+                    </select>
 
-            </div>
-            <button onclick="ajoutercompetences()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
-
-            <!-- centres d'interet -->
-             <h1>CENTRES D'INTERET</h1>
-             <div>
-                <input type="text" name="loisirs" id="loisirs">
-                <button onclick="ajouterloisirs()" placeholder="entrer un loisir"><img src="images/PLUS.png" alt="plus"></button>
-             </div>
-
-             <!-- langues -->
-              <h1>LAGNGUES</h1>
-              <div>
-                <input type="text" name="langues" placeholder="entrer une langue">
-                <select name="langue" id="langue">
-                    <option value="francais">Francais</option>
-                    <option value="francais">Anglais</option>
-                    <option value="francais">Espagnol</option>
-                    <option value="francais">Chinois</option>
-                    <option value="francais">L'Allemand</option>
-                    <option value="francais">Latin</option>
-                </select>
-              </div>
-              <div>
-                <!-- niveau de competencde de la langue-->
-                <select name="competences" class="border border-gray-300 rounded px-3 py-2 ml-2" id="comp">
-                    <option value="basic">Debutant</option>
-                    <option value="Inter">Intermediaire</option>
-                    <option value="Bien">Bien</option>
-                    <option value="Tres bien">Tres bien</option>
-                    <option value="Excellent">Excellent</option>
-                </select>
-              </div>
-        </section>
-
-        <section class="m-2 w-1/3">
-            <!-- informations personnelles -->
-            <h1 class="">INFORMATIONS PERSONNELLES</h1>
-            <div class="grid-rows-1 bg-amber-400 pl-6 space-y-2" id="IP">
-                <div class=" flex ">
-                    <label for="nom" placeholder="Nom complet"class="w-1/3"> Nom complet</label>
-                    <input type="text" id="nom" class="border-b-2 w-1/2" title="Noms et prenoms">
                 </div>
-                <div class=" flex ">
-                    <label for="age" placeholder="age">Age</label>
-                    <input type="number" class="border-1" title="Age">
+                <button onclick="ajoutercompetences()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
+
+                <!-- centres d'interet -->
+                <h1>CENTRES D'INTERET</h1>
+                <div>
+                    <input type="text" name="loisirs" id="loisirs">
+                    <button onclick="ajouterloisirs()" placeholder="entrer un loisir"><img src="images/PLUS.png"
+                            alt="plus"></button>
                 </div>
-                <div class=" flex ">
-                    <label for="sexe" placeholder="sexe">Sexe</label>
-                    <select name="sexe" id="sexe">
-                        <option value="masculin">Masculin</option>
-                        <option value="feminin">Feminin</option>
+
+                <!-- langues -->
+                <h1>LAGNGUES</h1>
+                <div>
+                    <input type="text" name="langues" placeholder="entrer une langue">
+                    <select name="langue" id="langue">
+                        <option value="francais">Francais</option>
+                        <option value="francais">Anglais</option>
+                        <option value="francais">Espagnol</option>
+                        <option value="francais">Chinois</option>
+                        <option value="francais">L'Allemand</option>
+                        <option value="francais">Latin</option>
                     </select>
                 </div>
-                <div class=" flex ">
-                    <label for="titre_poste" placeholder="titre_poste">Titre du poste</label>
-                    <input type="text" name="poste" id="poste" class="border-1">
-                </div>
-                <div class=" flex ">
-                    <label for="situation">Situation Actuelle</label>
-                    <input type="text" id="situation" class="border-1">
-                </div>
-                <div class=" flex ">
-                    <label for="description">Description</label>
-                    <textarea name="description" id="description" cols="20" rows="3" class="border-1"></textarea>
-                </div>
-                <div class=" flex ">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="border-1">
-                </div>
-                <div class=" flex ">
-                    <label for="telephone">Telephone</label>
-                    <input type="number" name="telephone" id="telephone" class="border-1">
-                </div>
-                <div class=" flex ">
-                    <label for="adresse">Adresse</label>
-                    <input type="text" class="border-1">
-                </div>
-                
-
-            </div>
-
-            <!-- Experiences professionnelles -->
-            <h1>EXPERIENCES PROFESSIONNELES</h1>
-            <div class="" id="EP">
                 <div>
-                <label for="nom_entreprise">Nom de l'entreprise</label>
-                <input type="text" id="nom_entreprise" class="border-1">
+                    <!-- niveau de competencde de la langue-->
+                    <select name="competences" class="border border-gray-300 rounded px-3 py-2 ml-2" id="comp">
+                        <option value="basic">Debutant</option>
+                        <option value="Inter">Intermediaire</option>
+                        <option value="Bien">Bien</option>
+                        <option value="Tres bien">Tres bien</option>
+                        <option value="Excellent">Excellent</option>
+                    </select>
                 </div>
+            </section>
+        </form>
 
-               <div>
-                <label for="poste_occupe">Poste occupe</label>
-                <input type="text" id="poste_occupe" class="border-1">
-               </div>
-                
-               <div>
-                <label for="duree">Duree</label>
-                <input type="time" name="duree" id="duree" class="border-1">
-               </div>
-                
-               <div>
-                <label for="description"> Description des missions</label>
-                <textarea name="descriptionEP" id="descriptionEP" cols="20" rows="3" class="border-1"></textarea>
-               </div>
-                
-                <button onclick="Ajouterexperience()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
-
-            </div>
-
-            <!-- formation -->
-            <h1>FORMATION</h1>
-            <div class="" id="formation">
-                <div>
-                <label for="diplome">Diplomes obtenus</label>
-                <input type="text" id="diplome" class="border-1">
-                </div>
-                
-                <div>
-                <label for="etablissement">Etablissement</label>
-                <input type="text" id="etablissement" class="border-1">
-                </div>
-               
-                <div>
-                <label for="obtention">Annee obtention</label>
-                <input type="date" id="annee_obtention" class="border-1">
-                </div>
-               
-                <button onclick="Ajouterformation()"><img src="Images/PLUS.png" alt="icone"></button>
-
-            </div>
-
-            <!-- references -->
-            <h1>REFERENCES</h1>
-            <div class="" id="references">
-                <div>
-                <label for="nom">NOM</label>
-                <input type="text" placeholder="entrer le nom du referent" class="border-1">
-                </div>
-                
-                <div>
-                  <label for="poste">Poste</label>
-                <input type="text" name="postereferent" id="postereferent" placeholder="enter le poste"
-                    class="border-1">  
-                </div>
-                
-                <div>
-                <label for="contact">Contact</label>
-                <input type="number" name="contact" id="contact" class="border-1">
-                </div>
-                
-                <button onclick="ajouterreference()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
-
-            </div>
-
-        </section>
     </section>
-    </form>
-    
+    <!-- deuxieme section -->
+
+    <section>
+
+    </section>
+
 
 
 
