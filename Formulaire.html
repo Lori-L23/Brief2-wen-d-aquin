@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV dtnamique</title>
+    <link href="" rel="stylesheet">
+    <title>CV dynamique</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
+    <form method="post">
+        <section class="flex ">
+        <section class="bg-amber-200 w-1/3">
+
+            <label for="photo">Photo de profil</label>
+                <input type="file" name="profil" id="profil" class="border- 1">
+
+            <!-- competences -->
+            <h1 class="color-orange">COMPETENCES</h1>
+            <div class=" flex items-center" id="competences">
+                <input type="text" placeholder="skills" class="border-2 border-gray-300 rounded px-3 py-2 ">
+                <select name="competences" class="border border-gray-300 rounded px-3 py-2 ml-2" id="comp">
+                    <option value="basic">Debutant</option>
+                    <option value="Inter">Intermediaire</option>
+                    <option value="Bien">Bien</option>
+                    <option value="Tres bien">Tres bien</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+
+            </div>
+            <button onclick="ajoutercompetences()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
+
+            <!-- centres d'interet -->
+             <h1>CENTRES D'INTERET</h1>
+             <div>
+                <input type="text" name="loisirs" id="loisirs">
+                <button onclick="ajouterloisirs()" placeholder="entrer un loisir"><img src="images/PLUS.png" alt="plus"></button>
+             </div>
+
+             <!-- langues -->
+              <h1>LAGNGUES</h1>
+              <div>
+                <input type="text" name="langues" placeholder="entrer une langue">
+                <select name="langue" id="langue">
+                    <option value="francais">Francais</option>
+                    <option value="francais">Anglais</option>
+                    <option value="francais">Espagnol</option>
+                    <option value="francais">Chinois</option>
+                    <option value="francais">L'Allemand</option>
+                    <option value="francais">Latin</option>
+                </select>
+              </div>
+              <div>
+                <!-- niveau de competencde de la langue-->
+                <select name="competences" class="border border-gray-300 rounded px-3 py-2 ml-2" id="comp">
+                    <option value="basic">Debutant</option>
+                    <option value="Inter">Intermediaire</option>
+                    <option value="Bien">Bien</option>
+                    <option value="Tres bien">Tres bien</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+              </div>
+        </section>
+
+        <section class="m-2 w-1/3">
+            <!-- informations personnelles -->
+            <h1 class="">INFORMATIONS PERSONNELLES</h1>
+            <div class="grid-rows-1 bg-amber-400 pl-6 space-y-2" id="IP">
+                <div class=" flex ">
+                    <label for="nom" placeholder="Nom complet"class="w-1/3"> Nom complet</label>
+                    <input type="text" id="nom" class="border-b-2 w-1/2" title="Noms et prenoms">
+                </div>
+                <div class=" flex ">
+                    <label for="age" placeholder="age">Age</label>
+                    <input type="number" class="border-1" title="Age">
+                </div>
+                <div class=" flex ">
+                    <label for="sexe" placeholder="sexe">Sexe</label>
+                    <select name="sexe" id="sexe">
+                        <option value="masculin">Masculin</option>
+                        <option value="feminin">Feminin</option>
+                    </select>
+                </div>
+                <div class=" flex ">
+                    <label for="titre_poste" placeholder="titre_poste">Titre du poste</label>
+                    <input type="text" name="poste" id="poste" class="border-1">
+                </div>
+                <div class=" flex ">
+                    <label for="situation">Situation Actuelle</label>
+                    <input type="text" id="situation" class="border-1">
+                </div>
+                <div class=" flex ">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="20" rows="3" class="border-1"></textarea>
+                </div>
+                <div class=" flex ">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="border-1">
+                </div>
+                <div class=" flex ">
+                    <label for="telephone">Telephone</label>
+                    <input type="number" name="telephone" id="telephone" class="border-1">
+                </div>
+                <div class=" flex ">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" class="border-1">
+                </div>
+                
+
+            </div>
+
+            <!-- Experiences professionnelles -->
+            <h1>EXPERIENCES PROFESSIONNELES</h1>
+            <div class="" id="EP">
+                <div>
+                <label for="nom_entreprise">Nom de l'entreprise</label>
+                <input type="text" id="nom_entreprise" class="border-1">
+                </div>
+
+               <div>
+                <label for="poste_occupe">Poste occupe</label>
+                <input type="text" id="poste_occupe" class="border-1">
+               </div>
+                
+               <div>
+                <label for="duree">Duree</label>
+                <input type="time" name="duree" id="duree" class="border-1">
+               </div>
+                
+               <div>
+                <label for="description"> Description des missions</label>
+                <textarea name="descriptionEP" id="descriptionEP" cols="20" rows="3" class="border-1"></textarea>
+               </div>
+                
+                <button onclick="Ajouterexperience()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
+
+            </div>
+
+            <!-- formation -->
+            <h1>FORMATION</h1>
+            <div class="" id="formation">
+                <div>
+                <label for="diplome">Diplomes obtenus</label>
+                <input type="text" id="diplome" class="border-1">
+                </div>
+                
+                <div>
+                <label for="etablissement">Etablissement</label>
+                <input type="text" id="etablissement" class="border-1">
+                </div>
+               
+                <div>
+                <label for="obtention">Annee obtention</label>
+                <input type="date" id="annee_obtention" class="border-1">
+                </div>
+               
+                <button onclick="Ajouterformation()"><img src="Images/PLUS.png" alt="icone"></button>
+
+            </div>
+
+            <!-- references -->
+            <h1>REFERENCES</h1>
+            <div class="" id="references">
+                <div>
+                <label for="nom">NOM</label>
+                <input type="text" placeholder="entrer le nom du referent" class="border-1">
+                </div>
+                
+                <div>
+                  <label for="poste">Poste</label>
+                <input type="text" name="postereferent" id="postereferent" placeholder="enter le poste"
+                    class="border-1">  
+                </div>
+                
+                <div>
+                <label for="contact">Contact</label>
+                <input type="number" name="contact" id="contact" class="border-1">
+                </div>
+                
+                <button onclick="ajouterreference()"><img src="Images/PLUS.png" alt="icone" class="h-5 w-5"></button>
+
+            </div>
+
+        </section>
+    </section>
+    </form>
     
+
+
+
+
+
+    </div>
 </body>
+
 </html>
