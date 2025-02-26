@@ -11,12 +11,32 @@
 </head>
 
 <body>
-    <nav>
+    <!-- header -->
+    <header class="header w-full flex fixed h-20 p-10  justify-between items-center bg-[#101C1E] text-white z-5 ">
+        <div class="grid">
+        <a class="text-3xl">Web Nova </a>
+        <a class="text-2xl">CvPro</a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="index.html">Acceuil</a>
 
-    </nav>
+        </nav>
+        <div class="btn-group1">
+            <a href="Formulaire.html"
+                class=" active  text-orange-300 text-xl border-2 rounded-4xl p-2 transition transform hover:scale-110 hover:bg-white-800">
+                Commencer maintenant
+            </a>
+
+        </div>
+    </header>
+
     <!-- premiere section -->
+     <section class="flex">
 
-    <section class="w-1/2 grid-cols-1 ps-7 pe-5 overflow-y-auto top-65.3333">
+    
+
+    <section class="w-1/2 grid-cols-1 ps-7 pe-5 overflow-y-auto h-screen">
 
        
             <section class="m-2 ">
@@ -71,26 +91,14 @@
 
                 <p class="text-gray-500"></p>
                 <p style="direction: ltr;"></p>
-                <div class="w-full border-b border-gray-200 collapsible-section">
-                    <div class="flex items-stretch w-full">
+                <div class="w-full border-b border-gray-200 sticky top-20 z-2 bg-white/30 backdrop-blur-sm">
+                    <div class="flex items-stretch w-full ">
                         <button type="button"
                             class="flex-grow py-3 pe-6 text-start overflow-hidden rounded focus-visible:ring-4 ring-brand-200 ring-inset">
                             <h3 class="text-xl truncate text-gray-800 font-bold select-none" style="direction: ltr;">
                                 Informations personnelles</h3>
                         </button>
-                        <div class="py-6 flex whitespace-nowrap items-start">
-                            <button class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 
-                                items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 
-                                can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base" type="button"
-                                data-testid="" style="outline: none;">
-                                <span class="relative">
-
-                                    <img src="images/deroulant.png" alt="Icône de flèche"
-                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6">
-
-                                </span>
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -329,11 +337,11 @@
                 <!-- Experiences professionnelles -->
                 <p class="text-gray-500"></p>
                 <p style="direction: ltr;"></p>
-                <div class="w-full flex relative flex-col">
-                    <div class="w-full border-b border-gray-200 collapsible-section">
-                        <div class="flex items-stretch w-full">
+                <div class="w-full flex  flex-col">
+                    <div class="w-full border-b border-gray-200 sticky top-0 z-2 bg-white/30 backdrop-blur-sm">
+                        <div class="flex items-stretch w-full ">
                             <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
-                                <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
+                                <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800 ">
                                     <span class="absolute h-0 block overflow-hidden whitespace-pre"
                                         style="font-family: inherit; font-weight: inherit; font-size: inherit;">Expérience
                                         professionnelle</span>
@@ -344,17 +352,7 @@
                                         style="width: 252px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
                                 </div>
                             </div>
-                            <div class="py-6 flex whitespace-nowrap items-start">
-
-                                <button id="monbouton1" onclick="deroulement()"
-                                    class="flex items-center justify-between w-full py-3 px-4 text-left bg-white border rounded focus:outline-none focus:ring hover:bg-gray-100">
-                                    <span class="relative">
-
-                                        <img id="img1EP" src="images/deroulant.png" alt="Icône de flèche"
-                                            class="pointer-events-none flex-shrink-0 box-content h-4 w-4">
-                                    </span>
-                                </button>
-                            </div>
+                            
                         </div>
 
                     </div>
@@ -1071,11 +1069,13 @@
                 </div>
 
                 <!-- formation -->
+                <p class="text-gray-500"></p>
+                <p style="direction: ltr;"></p>
                 <div class="w-full flex relative flex-col">
-                    <div class="w-full border-b border-gray-200 collapsible-section">
+                    <div class="w-full border-b border-gray-200 sticky top-0 z-2 bg-white/30 backdrop-blur-sm">
                         <div class="flex items-stretch w-full">
-                            <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
-                                <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
+                            <div class="flex-grow  py-3 pe-6 text-start overflow-hidden rounded s">
+                                <div class="relative items-center font-bold overflow-hidden  text-xl text-gray-800">
                                     <span class="absolute h-0 block overflow-hidden whitespace-pre"
                                         style="font-family: inherit; font-weight: inherit; font-size: inherit;">Formation</span><input
                                         type="text"
@@ -1084,14 +1084,6 @@
                                         autocomplete="off" value=""
                                         style="width: 99px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
                                 </div>
-                            </div>
-                            <div class="py-6 flex whitespace-nowrap items-start">
-                                <div class="flex me-2"></div><button
-                                    class="flex items-center justify-between w-full py-3 px-4 text-left bg-white border rounded focus:outline-none focus:ring hover:bg-gray-100">
-                                    <span class="relative">
-
-                                        <img id="img1EP" src="images/deroulant.png" alt="Icône de flèche"
-                                            class="pointer-events-none flex-shrink-0 box-content h-4 w-4"></span></button>
                             </div>
                         </div>
                         <p class="text-gray-500"></p>
@@ -1802,9 +1794,10 @@
                 </div>
 
                 <!-- references -->
-
+                <p class="text-gray-500"></p>
+                <p style="direction: ltr;"></p>
                 <div class="w-full flex relative flex-col">
-                    <div class="w-full border-b border-gray-200 collapsible-section">
+                    <div class="w-full border-b border-gray-200 sticky top-0 z-2 bg-white/30 backdrop-blur-sm">
                         <div class="flex items-stretch w-full">
                             <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
                                 <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
@@ -1817,17 +1810,7 @@
                                         style="width: 103px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
                                 </div>
                             </div>
-                            <div class="py-6 flex whitespace-nowrap items-start">
-                                <div class="flex me-2"></div><button
-                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base"
-                                    type="button" data-testid="" style="outline: none;"><span class="relative"><svg
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                            <path fill="currentColor"
-                                                d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
-                                            </path>
-                                        </svg></span></button>
-                            </div>
+                          
                         </div>
                         <p class="text-gray-500"></p>
                         <p style="direction: ltr;">Références disponibles sur demande.</p>
@@ -1944,18 +1927,7 @@
                                                     d="M292.309-140.001q-29.923 0-51.115-21.193-21.193-21.192-21.193-51.115V-720h-10q-12.769 0-21.384-8.615t-8.616-21.384 8.616-21.384q8.615-8.616 21.384-8.616H360q0-14.692 10.346-25.038t25.038-10.346h169.232q14.692 0 25.038 10.346T600-779.999h149.999q12.769 0 21.384 8.616t8.616 21.384-8.616 21.384Q762.768-720 749.999-720h-10v507.691q0 29.923-21.193 51.115-21.192 21.193-51.115 21.193zM680-720H280v507.691q0 5.385 3.462 8.847t8.847 3.462h375.382q5.385 0 8.847-3.462t3.462-8.847zM376.155-280h59.999v-360h-59.999zm147.691 0h59.999v-360h-59.999zM280-720v520z">
                                                 </path>
                                             </svg></span><span class="sr-only">Supprimer</span></button>
-                                    <div class="ms-2"><button
-                                            class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-brand-500 active:bg-brand-300 can-hover:active:bg-brand-300 text-white border-transparent can-hover:hover:bg-brand-400 font-medium py-1 ps-1 pe-3 text-base"
-                                            type="button" data-testid="" style="outline: none;"><span
-                                                class="relative"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 -960 960 960"
-                                                    class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                                    <path fill="currentColor"
-                                                        d="m382-339.384 345.539-345.538q8.923-8.923 21.192-9.116t21.576 9.116q9.308 9.307 9.308 21.384t-9.308 21.384l-363 362.999Q396.461-268.309 382-268.309t-25.307-10.846l-167-166.999q-8.923-8.923-8.808-21.192t9.423-21.576 21.384-9.308 21.384 9.308z">
-                                                    </path>
-                                                </svg></span>
-                                            <div class="truncate h-6 ms-0.5  ">Terminé</div>
-                                        </button></div>
+                                   >
                                 </div>
                             </div>
                         </div>
@@ -1964,14 +1936,16 @@
 
 
                 <!-- competences -->
-            <div class="w-full border-b border-gray-200 collapsible-section">
+                <p class="text-gray-500"></p>
+                <p style="direction: ltr;"></p>
+            <div class="w-full border-b border-gray-200 ">
                 <div class="flex direct-group w-full items-center relative bg-white rounded-large  draggable-section"
                     data-rbd-draggable-context-id="0" data-rbd-draggable-id="skills" id="record-skills">
                     <div class=""></div>
                     <div class="w-full flex relative flex-col">
-                        <div class="w-full border-b border-gray-200 collapsible-section">
+                        <div class="w-full border-b border-gray-200 sticky top-0 z-2 bg-white/30 backdrop-blur-sm">
                             <div class="flex items-stretch w-full">
-                                <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
+                                <div class="flex-grow flex py-3 pe-6 text-start  rounded ">
                                     <div
                                         class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
                                         <span class="absolute h-0 block overflow-hidden whitespace-pre"
@@ -1983,18 +1957,8 @@
                                             style="width: 127px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
                                     </div>
                                 </div>
-                                <div class="py-6 flex whitespace-nowrap items-start">
-                                    <div class="flex me-2"></div><button
-                                        class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base"
-                                        type="button" data-testid="" style="outline: none;"><span class="relative"><svg
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                                                class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                                <path fill="currentColor"
-                                                    d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
-                                                </path>
-                                            </svg></span></button>
-                                </div>
-                            </div>
+                               
+                            </div> 
                             <p class="text-gray-500"></p>
                             <p style="direction: ltr;"></p>
                             <div class="w-full mb-4">
@@ -2066,18 +2030,7 @@
                                                             d="M292.309-140.001q-29.923 0-51.115-21.193-21.193-21.192-21.193-51.115V-720h-10q-12.769 0-21.384-8.615t-8.616-21.384 8.616-21.384q8.615-8.616 21.384-8.616H360q0-14.692 10.346-25.038t25.038-10.346h169.232q14.692 0 25.038 10.346T600-779.999h149.999q12.769 0 21.384 8.616t8.616 21.384-8.616 21.384Q762.768-720 749.999-720h-10v507.691q0 29.923-21.193 51.115-21.192 21.193-51.115 21.193zM680-720H280v507.691q0 5.385 3.462 8.847t8.847 3.462h375.382q5.385 0 8.847-3.462t3.462-8.847zM376.155-280h59.999v-360h-59.999zm147.691 0h59.999v-360h-59.999zM280-720v520z">
                                                         </path>
                                                     </svg></span><span class="sr-only">Supprimer</span></button>
-                                            <div class="ms-2"><button
-                                                    class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-brand-500 active:bg-brand-300 can-hover:active:bg-brand-300 text-white border-transparent can-hover:hover:bg-brand-400 font-medium py-1 ps-1 pe-3 text-base"
-                                                    type="button" data-testid="" style="outline: none;"><span
-                                                        class="relative"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 -960 960 960"
-                                                            class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                                            <path fill="currentColor"
-                                                                d="m382-339.384 345.539-345.538q8.923-8.923 21.192-9.116t21.576 9.116q9.308 9.307 9.308 21.384t-9.308 21.384l-363 362.999Q396.461-268.309 382-268.309t-25.307-10.846l-167-166.999q-8.923-8.923-8.808-21.192t9.423-21.576 21.384-9.308 21.384 9.308z">
-                                                            </path>
-                                                        </svg></span>
-                                                    <div class="truncate h-6 ms-0.5  ">Terminé</div>
-                                                </button></div>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -2104,10 +2057,12 @@
             </div>
 
             <!-- centres d'interet -->
+            <p class="text-gray-500"></p>
+            <p style="direction: ltr;"></p>
             <div class="w-full flex relative flex-col">
-                <div class="w-full border-b border-gray-200 collapsible-section">
+                <div class="w-full border-b border-gray-200 sticky top-0 z-2 bg-white/30 backdrop-blur-sm">
                     <div class="flex items-stretch w-full">
-                        <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
+                        <div class="flex-grow flex py-3 pe-6 text-start ">
                             <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
                                 <span class="absolute h-0 block overflow-hidden whitespace-pre"
                                     style="font-family: inherit; font-weight: inherit; font-size: inherit;">Centres
@@ -2118,17 +2073,7 @@
                                     style="width: 158px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
                             </div>
                         </div>
-                        <div class="py-6 flex whitespace-nowrap items-start">
-                            <div class="flex me-2"></div><button
-                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base"
-                                type="button" data-testid="" style="outline: none;"><span class="relative"><svg
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                        <path fill="currentColor"
-                                            d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
-                                        </path>
-                                    </svg></span></button>
-                        </div>
+                       
                     </div>
                     <p class="text-gray-500"></p>
                     <p style="direction: ltr;"></p>
@@ -2160,18 +2105,7 @@
                                                     d="M292.309-140.001q-29.923 0-51.115-21.193-21.193-21.192-21.193-51.115V-720h-10q-12.769 0-21.384-8.615t-8.616-21.384 8.616-21.384q8.615-8.616 21.384-8.616H360q0-14.692 10.346-25.038t25.038-10.346h169.232q14.692 0 25.038 10.346T600-779.999h149.999q12.769 0 21.384 8.616t8.616 21.384-8.616 21.384Q762.768-720 749.999-720h-10v507.691q0 29.923-21.193 51.115-21.192 21.193-51.115 21.193zM680-720H280v507.691q0 5.385 3.462 8.847t8.847 3.462h375.382q5.385 0 8.847-3.462t3.462-8.847zM376.155-280h59.999v-360h-59.999zm147.691 0h59.999v-360h-59.999zM280-720v520z">
                                                 </path>
                                             </svg></span><span class="sr-only">Supprimer</span></button>
-                                    <div class="ms-2"><button
-                                            class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-brand-500 active:bg-brand-300 can-hover:active:bg-brand-300 text-white border-transparent can-hover:hover:bg-brand-400 font-medium py-1 ps-1 pe-3 text-base"
-                                            type="button" data-testid="" style="outline: none;"><span
-                                                class="relative"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 -960 960 960"
-                                                    class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                                    <path fill="currentColor"
-                                                        d="m382-339.384 345.539-345.538q8.923-8.923 21.192-9.116t21.576 9.116q9.308 9.307 9.308 21.384t-9.308 21.384l-363 362.999Q396.461-268.309 382-268.309t-25.307-10.846l-167-166.999q-8.923-8.923-8.808-21.192t9.423-21.576 21.384-9.308 21.384 9.308z">
-                                                    </path>
-                                                </svg></span>
-                                            <div class="truncate h-6 ms-0.5  ">Terminé</div>
-                                        </button></div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -2194,10 +2128,12 @@
             </div>
 
             <!-- langues -->
+            <p class="text-gray-500"></p>
+            <p style="direction: ltr;"></p>
             <div class="w-full flex relative flex-col">
-                <div class="w-full border-b border-gray-200 collapsible-section">
+                <div class="w-full border-b border-gray-200 sticky top-0 z-2 bg-white/30 backdrop-blur-sm">
                     <div class="flex items-stretch w-full">
-                        <div class="flex-grow flex py-3 pe-6 text-start overflow-hidden rounded">
+                        <div class="flex-grow flex py-3 pe-6 text-start rounded ">
                             <div class="relative items-center font-bold overflow-hidden flex text-xl text-gray-800">
                                 <span class="absolute h-0 block overflow-hidden whitespace-pre"
                                     style="font-family: inherit; font-weight: inherit; font-size: inherit;">Langues</span><input
@@ -2208,17 +2144,7 @@
                                     style="width: 78px; outline: none; font-family: inherit; font-weight: inherit; font-size: inherit; direction: ltr;">
                             </div>
                         </div>
-                        <div class="py-6 flex whitespace-nowrap items-start">
-                            <div class="flex me-2"></button></div><button
-                                class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-transparent active:bg-brand-100 can-hover:active:bg-brand-100 text-gray-700 border-gray-400 can-hover:hover:bg-brand-50 can-hover:hover:border-brand-400 font-medium py-1 ps-1 pe-1 text-base"
-                                type="button" data-testid="" style="outline: none;"><span class="relative"><svg
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                                        class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                        <path fill="currentColor"
-                                            d="M480-542.463 317.076-379.539q-8.307 8.308-20.884 8.5t-21.268-8.5q-8.693-8.692-8.693-21.076t8.693-21.077l179.769-179.769q5.615-5.615 11.846-7.923T480-611.691t13.461 2.307q6.231 2.308 11.846 7.923l179.769 179.769q8.308 8.308 8.5 20.884t-8.5 21.269T664-370.847t-21.076-8.692z">
-                                        </path>
-                                    </svg></span></button>
-                        </div>
+                        
                     </div>
                     <p class="text-gray-500"></p>
                     <p style="direction: ltr;"></p>
@@ -2293,18 +2219,7 @@
                                                     d="M292.309-140.001q-29.923 0-51.115-21.193-21.193-21.192-21.193-51.115V-720h-10q-12.769 0-21.384-8.615t-8.616-21.384 8.616-21.384q8.615-8.616 21.384-8.616H360q0-14.692 10.346-25.038t25.038-10.346h169.232q14.692 0 25.038 10.346T600-779.999h149.999q12.769 0 21.384 8.616t8.616 21.384-8.616 21.384Q762.768-720 749.999-720h-10v507.691q0 29.923-21.193 51.115-21.192 21.193-51.115 21.193zM680-720H280v507.691q0 5.385 3.462 8.847t8.847 3.462h375.382q5.385 0 8.847-3.462t3.462-8.847zM376.155-280h59.999v-360h-59.999zm147.691 0h59.999v-360h-59.999zM280-720v520z">
                                                 </path>
                                             </svg></span><span class="sr-only">Supprimer</span></button>
-                                    <div class="ms-2"><button
-                                            class="inline-flex border justify-center rounded-brand relative overflow-hidden max-w-full focus-visible:ring-4 ring-brand-200 items-center bg-brand-500 active:bg-brand-300 can-hover:active:bg-brand-300 text-white border-transparent can-hover:hover:bg-brand-400 font-medium py-1 ps-1 pe-3 text-base"
-                                            type="button" data-testid="" style="outline: none;"><span
-                                                class="relative"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 -960 960 960"
-                                                    class="pointer-events-none flex-shrink-0 box-content h-6 w-6 ">
-                                                    <path fill="currentColor"
-                                                        d="m382-339.384 345.539-345.538q8.923-8.923 21.192-9.116t21.576 9.116q9.308 9.307 9.308 21.384t-9.308 21.384l-363 362.999Q396.461-268.309 382-268.309t-25.307-10.846l-167-166.999q-8.923-8.923-8.808-21.192t9.423-21.576 21.384-9.308 21.384 9.308z">
-                                                    </path>
-                                                </svg></span>
-                                            <div class="truncate h-6 ms-0.5  ">Terminé</div>
-                                        </button></div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -2328,7 +2243,7 @@
 
 
 
-
+</section>
 
 
     </div>
