@@ -46,3 +46,5 @@ bouton.getElementById('monbouton1').addEventListener('click', () => {
     fleche.classList.toggle('rotate-180');
 });
 document.querySelector("#record-references > div.w-full.flex.relative.flex-col > div > div.w-full.mb-4 > div.-mx-2.flex.flex-col > div")
+
+document.querySelector("#record-languages > div.w-full.flex.relative.flex-col")
