@@ -195,7 +195,7 @@
                                         </div>
                                         <div
                                             class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
-                                            <input id=":r2c:" data-s="Adresse e-mail" type="text" size="1"
+                                            <input id="email" data-s="Adresse e-mail" type="text" size="1"
                                                 autocomplete="email" maxlength="1000"
                                                 class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
                                                 value="">
@@ -213,10 +213,10 @@
                                         </div>
                                         <div
                                             class="relative flex flex-row border focus-within:border-brand-400 focus-within:bg-brand-50 rounded text-gray-800 border-transparent bg-gray-100  ">
-                                            <input id=":r2e:" data-s="Numéro de téléphone" type="text" size="1"
+                                            <input id="telephone" data-s="Numéro de téléphone" type="text" size="1"
                                                 autocomplete="tel" maxlength="1000"
                                                 class="flex-1 appearance-none outline-none rounded  ltr py-2 ps-3 text-base pe-3  bg-transparent"
-                                                value="">
+                                                value="" oninput="telephone()">
                                         </div>
                                     </div>
                                 </div>
@@ -2242,10 +2242,16 @@
 
 
 
-</section>
+    </section>
 
-
-    </div>
+<script>
+    // verifier le format des numéros de téléphone
+ function telephone(){
+    if (telephone.lenght > 9) {
+        document.getElementById("telephone").innerHTML = "<span style='color: red;'>Numero de telephone invalide, entre moins de 9 caractères.</span>"
+    }
+ }
+</script>
 </body>
 
 </html>
