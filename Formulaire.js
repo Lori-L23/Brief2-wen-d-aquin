@@ -18,13 +18,13 @@ if (email != "nomutilisateur@domaine"){
 
 
 // Limiter l’âge à une plage cohérente (ex. : 18-65 ans)
-if (age.length < 18 || age.length > 65) {
-    document.getElementById("age").innerHTML = "<span style='color: red;'>votre afes doit etre compris entre 18 et 65 ans</span>";
-    valid = false;
-}
+// if (age.length < 18 || age.length > 65) {
+//     document.getElementById("age").innerHTML = "<span style='color: red;'>votre afes doit etre compris entre 18 et 65 ans</span>";
+//     valid = false;
+// }
 
-let dateactuelle = new Date();
-let duree = dateexperience - dateactuelle;
+// let dateactuelle = new Date();
+// let duree = dateexperience - dateactuelle;
 // S’assurer que la date d’expérience est valide
 
 if (dateexperience > dateactuelle) {
@@ -40,10 +40,10 @@ if (dateexperience > dateactuelle) {
     }
  }
 
- function age(){
-    // Limiter l’âge à une plage cohérente (ex. : 18-65 ans)
-if (age.length < 18 || age.length > 65) {
-    document.getElementById("age").innerHTML = "<span style='color: red;'>votre afes doit etre compris entre 18 et 65 ans</span>";
-    valid = false;
-}
- }
+//  function age(){
+//     // Limiter l’âge à une plage cohérente (ex. : 18-65 ans)
+// if (age.length < 18 || age.length > 65) {
+//     document.getElementById("age").innerHTML = "<span style='color: red;'>votre afes doit etre compris entre 18 et 65 ans</span>";
+//     valid = false;
+// }
+//  }
