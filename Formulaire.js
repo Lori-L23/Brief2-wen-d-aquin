@@ -48,3 +48,12 @@ bouton.getElementById('monbouton1').addEventListener('click', () => {
 document.querySelector("#record-references > div.w-full.flex.relative.flex-col > div > div.w-full.mb-4 > div.-mx-2.flex.flex-col > div")
 
 document.querySelector("#record-languages > div.w-full.flex.relative.flex-col")
+
+// js pour la visualisation
+
+    const surname = document.getElementById('focus-id-name-givenName');
+    const surnameDynamique = document.getElementById('surname');
+
+    surname.addEventListener('input', function() {
+        surnameDynamique.textContent = surname.value;
+    });
