@@ -26,16 +26,16 @@
                 class=" active  text-orange-300 text-xl border-2 rounded-4xl p-2 transition transform hover:scale-110 hover:bg-white-800">
                 Commencer maintenant
             </a>
-
+            <button type="" class=" text-color-orange bg-[#101C1E] border-2 border-bg-[#101C1E] rounded-4xl p-2 ml-4" onclick="telecharger()">Telecharger en PDF</button>
         </div>
     </header>
 
-    <!-- premiere section -->
-     <section class="flex">
+    <section class="flex">
         <section class="w-1/2 grid-cols-1 ps-7 pe-5 overflow-y-auto h-screen">
             <section class="m-2 ">
                 
-                    <section class="w-full grid-cols-1 ">
+                <section class="w-full grid-cols-1 ">
+                        <!-- premiere section -->
                         <form method="post">
                             <section class="m-2 mt-20">
                                 <div class="flex w-full">
@@ -2818,9 +2818,6 @@
                             </section>
 
 
-
-
-
                     </section>
 
 
@@ -2833,157 +2830,143 @@
                 <!-- deuxieme section -->
 
 
-        <section class="flex w-1/2 m-20 shadow-lg overflow-y-auto h-screen">
-            <!-- Cv en directe -->
-            <div class="w-1/3 bg-amber-100 rounded-t-lg">
-                <!-- Information courte -->
-                <div class="flex-col pt-5 text-center bg-amber-500 h-1/5 rounded-tl-lg rounded-b-[6vw]">
-                    <h1 class="text-white text-xl font-bold">Name</h1>
-                    <h2 class="text-white text-lg font-semibold">titre</h2>
-                </div>
-                <div class="">
-                    <img src="images/profil.png" alt="profil"
-                        class="w-2/3 rounded-full relative bottom-9 border-white border-17 left-1/5">
-                </div>
-                <div class="grid ml-4 mr-2 space-y-3">
-                    <h1 class="text-amber-500 text-xl border-b-1 font-bold">Informations Personnelles</h1>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/nom.png" alt="nom" class="w-5 h-5">
-                        <p id="surnameDynamique"></p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/telephone.png" alt="phone" class="w-5 h-5">
-                        <p>Telephone</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/email.png" alt="email" class="w-5 h-5">
-                        <p>Adresse email</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/maison.png" alt="Address" class="w-5 h-5">
-                        <p>Addresse</Address>
-                        </p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/position.png" alt="Ville" class="w-5 h-5">
-                        <p>Ville</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/calendrier.png" alt="naissance" class="w-5 h-5">
-                        <p>Date de naissance</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/position.png" alt="lieu de naissance" class="w-5 h-5">
-                        <p>Lieu de naissance</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/sexe.png" alt="phone" class="w-5 h-5">
-                        <p>Sexe</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/permis.png" alt="Permis" class="w-5 h-5">
-                        <p>Permis</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/drapeau.png" alt="Nationalité" class="w-5 h-5">
-                        <p>Nationalité</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/bague.png" alt="etat civil" class="w-5 h-5">
-                        <p>Etat civil</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/site.png" alt="site" class="w-5 h-5">
-                        <p>Site interet</p>
-                    </div>
-                    <div class="flex justify-start items-center space-x-4 mt-4">
-                        <img src="images/linkedin.png" alt="linkedin" class="w-5 h-5">
-                        <p>Profil LinkedIn</p>
-                    </div>
-                </div>
-                <div class="grid ml-4 mr-2 mt-4">
-                    <h1 class="text-amber-500 text-xl border-b-1 font-bold">Langues</h1>
-                    <div class="flex justify-between mt-4">
-                        <h1>Francais</h1>
-                        <div class="flex justify-center items-center">
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-200 bg-amber-100"></span>
+                <section class="flex w-1/2 mt-20  ml-8 mr-8 shadow-lg overflow-y-auto h-screen" id="cv-preview">
+                    <!-- Cv en directe -->
+                    <div class="w-1/3 bg-amber-100 rounded-t-lg h-fit">
+                        <!-- Information courte -->
+                        <div class="flex-col pt-5 text-center bg-amber-500 h-1/5 rounded-tl-lg rounded-b-[6vw]">
+                            <h1 class="text-white text-xl font-bold"><span id="nomfamille"></span> <span id="name1"></span></h1>
+                            <h2 class="text-white text-lg font-semibold" id="titre">titre</h2>
+                        </div>
+                        <div class="">
+                            <img src="images/profil.png" alt="profil" class="w-2/3 rounded-full relative bottom-9 border-white border-17 left-1/5">
+                        </div>
+                        <div class="grid ml-4 mr-2 space-y-3">
+                            <h1 class="text-amber-500 text-xl border-b-1 font-bold">Informations Personnelles</h1>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="profilshow">
+                                <img src="images/nom.png" alt="nom" class="w-5 h-5">
+                                <p><span id="nomfamille2"></span> <span id="name2"></span></p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="telephoneShow">
+                                <img src="images/telephone.png" alt="phone" class="w-5 h-5">
+                                <p></p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="adresseemailShow">
+                                <img src="images/email.png" alt="email" class="w-5 h-5">
+                                <p></p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="adresseShow">
+                                <img src="images/maison.png" alt="Address" class="w-5 h-5">
+                                <p>Addresse</Address></p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="villeShow">
+                                <img src="images/position.png" alt="Ville" class="w-5 h-5 ">
+                                <p></p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="datenaissanceShow">
+                                <img src="images/calendrier.png" alt="naissance" class="w-5 h-5">
+                                <p>Date de naissance</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4 hidden" id="lieunaissanceShow">
+                                <img src="images/position.png" alt="lieu de naissance" class="w-5 h-5">
+                                <p>Lieu de naissance</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4">
+                                <img src="images/sexe.png" alt="phone" class="w-5 h-5">
+                                <p>Sexe</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4">
+                                <img src="images/permis.png" alt="Permis" class="w-5 h-5">
+                                <p>Permis</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4">
+                                <img src="images/drapeau.png" alt="Nationalité" class="w-5 h-5">
+                                <p>Nationalité</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4">
+                                <img src="images/bague.png" alt="etat civil" class="w-5 h-5">
+                                <p>Etat civil</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4">
+                                <img src="images/site.png" alt="site" class="w-5 h-5">
+                                <p>Site interet</p>
+                            </div>
+                            <div class="flex justify-start items-center space-x-4 mt-4">
+                                <img src="images/linkedin.png" alt="linkedin" class="w-5 h-5">
+                                <p>Profil LinkedIn</p>
+                            </div>
+                        </div>
+                        <div class="grid ml-4 mr-2 mt-4">
+                            <h1 class="text-amber-500 text-xl border-b-1 font-bold">Langues</h1>
+                            <div class="flex justify-between mt-4">
+                                <h1>Francais</h1>
+                                <div class="flex justify-center items-center">
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-500"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-200 bg-amber-100"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid ml-4 mr-2 mt-4">
+                            <h1 class="text-amber-500 text-xl border-b-1 font-bold">Competence</h1>
+                            <div class="flex justify-between mt-4">
+                                <h1>Analyste</h1>
+                                <div class="flex justify-center items-center">
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
+                                    <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-200"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid ml-4 mr-2 mt-4">
-                    <h1 class="text-amber-500 text-xl border-b-1 font-bold">Competence</h1>
-                    <div class="flex justify-between mt-4">
-                        <h1>Analyste</h1>
-                        <div class="flex justify-center items-center">
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-600"></span>
-                            <span class="mr-1 w-1/5 h-50px rounded-full border-5 border-amber-200"></span>
+                    <div class="flex-col pl-4 pt-5 w-2/3 pr-2">
+                        <!-- Information longue -->
+                        <div class="flex-col">
+                            <h1 class="text-amber-500 text-xl font-bold">Profil</h1>
+                            <hr class="bg-amber-500"><br>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ullam aspernatur voluptas enim veritatis laborum soluta sed ducimus. 
+                                Modi, officia suscipit.</p>
                         </div>
+                        <br>
+                        <div class="flex-col">
+                            <h1 class="text-amber-500 text-xl font-bold">Formation</h1>
+                            <hr class="bg-gray-500"><br>
+                            <div class="flex justify-between font-semibold text-amber-500">
+                                <p class="">formation</p>
+                                <p class="">de: à:</p>
+                            </div>
+                            <p class="font-semibold">Nom de l'etablissement</p>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure sequi vero magni animi mollitia nesciunt cupiditate aperiam fuga cumque!</p>
+                        </div>
+                        <br>
+                        <div class="flex-col hidden" id="experienceShow">
+                            <h1 class="text-amber-500 text-xl font-bold">Experiences professionnelle</h1>
+                            <hr class="bg-gray-500"><br>
+                            <div class="flex justify-between font-semibold text-amber-500">
+                                <p class="" id="poste">Poste</p>
+                                <p class=""><span id="moisdebut">de: </span> <span id="anneedebutShow"></span>à: <span id="moisfin"> </span><span id="anneefinShow"></span></p>
+                            </div>
+                            <p class="font-semibold"><span id="employeur">Employeur</span>, <span id="ville2">Ville</span></p>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore repellat laborum nam numquam. Pariatur exercitationem eius, in sequi quia modi.</p>
+                        </div>
+                        <br>
+                        <div class="flex-col">
+                            <h1 class="text-amber-500 text-xl font-bold">Reference</h1>
+                            <hr class="bg-gray-500"><br>
+                            <div class="flex justify-between font-semibold ">
+                                <p class="" id="poste">Nom</p>
+                            </div>
+                            <p class="text-amber-500"><span class="font-semibold">Entreprise</span>, <span>Ville</span></p>
+                            <p class="">Email</p>
+                        </div>
+                        <br>
                     </div>
-                </div>
-            </div>
-            <div class="flex-col pl-4 pt-5 w-2/3 pr-2">
-                <!-- Information longue -->
-                <div class="flex-col">
-                    <h1 class="text-amber-500 text-xl font-bold">Profil</h1>
-                    <hr class="bg-amber-500"><br>
-                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ullam aspernatur voluptas enim veritatis laborum soluta sed ducimus.
-                        Modi, officia suscipit.</p>
-                </div>
-                <br>
-                <div class="flex-col">
-                    <h1 class="text-amber-500 text-xl font-bold">Formation</h1>
-                    <hr class="bg-gray-500"><br>
-                    <div class="flex justify-between font-semibold text-amber-500">
-                        <p class="">formation</p>
-                        <p class="">de: à:</p>
-                    </div>
-                    <p class="font-semibold">Nom de l'etablissement</p>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iure sequi vero magni
-                        animi mollitia nesciunt cupiditate aperiam fuga cumque!</p>
-                </div>
-                <br>
-                <div class="flex-col">
-                    <h1 class="text-amber-500 text-xl font-bold">Experiences professionnelle</h1>
-                    <hr class="bg-gray-500"><br>
-                    <div class="flex justify-between font-semibold text-amber-500">
-                        <p class="" id="poste">Poste</p>
-                        <p class="" id=""><span>de: </span><span>à:</span></p>
-                    </div>
-                    <p class="font-semibold"><span>Employeur</span>, <span>Ville</span></p>
-                    <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore repellat laborum nam
-                        numquam. Pariatur exercitationem eius, in sequi quia modi.</p>
-                </div>
-                <br>
-                <div class="flex-col">
-                    <h1 class="text-amber-500 text-xl font-bold">Reference</h1>
-                    <hr class="bg-gray-500"><br>
-                    <div class="flex justify-between font-semibold ">
-                        <p class="" id="poste">Nom</p>
-                    </div>
-                    <p class="text-amber-500"><span class="font-semibold">Entreprise</span>, <span>Ville</span></p>
-                    <p class="">Email</p>
-                </div>
-                <br>
-                <div class="flex-col">
-                    <h1 class="text-amber-500 text-xl font-bold">Competence</h1>
-                    <hr class="bg-gray-500"><br>
-                    <div class="flex justify-start space-x-4 font-semibold ">
-                        <p class="" id="poste">Nom</p>
-                        <p class="">niveau</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
+            </section>
     </section>
 
 
@@ -2991,14 +2974,180 @@
 
     </section>
 
-    <script src="Formulaire.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.1/html2pdf.bundle.min.js"></script>
+    
     <script>
-        const surname = document.getElementById('surname');
-        const surnameDynamique = document.getElementById('surnameDynamique');
-
-        texteSource.addEventListener('input', function () {
-            contenuDynamique.textContent = surname.value;
+        // js pour la visualisation
+    
+    
+        // if (champ.value.trim() === '') {
+        //     console.log("Le champ est vide");
+        // } else {
+        //     console.log("Le champ n'est pas vide");
+        // }
+        // prenom
+        const surname = document.getElementById('focus-id-name-givenName');
+        const surnameDynamique = document.getElementById('name1');
+        const surnameDynamique2 = document.getElementById('name2');
+    
+        surname.addEventListener('input', function() {
+            surnameDynamique.textContent = surname.value;
+            surnameDynamique2.textContent = surname.value;
+            const profilshow = document.getElementById("profilshow");
+    
+            profilshow.classList.remove("hidden");
         });
+    
+        // nom de famille
+        const famille = document.getElementById('focus-id-name-familyName');
+        const familleDynamique = document.getElementById('nomfamille');
+        const familleDynamique2 = document.getElementById('nomfamille2');
+        const profilshow = document.getElementById("profilshow");
+        
+        famille.addEventListener('input', function() {
+            familleDynamique.textContent = famille.value;
+            familleDynamique2.textContent = famille.value;
+    
+            profilshow.classList.remove("hidden");
+        });
+        const titre = document.getElementById(':r2a:');
+        const titreDynamique = document.getElementById('titre');
+    
+        titre.addEventListener('input', function() {
+            titreDynamique.textContent = titre.value;
+        });
+        // Adresse
+        const adresse = document.getElementById('focus-id-address-address');
+        const adresseDynamique = document.getElementById('adresseShow');
+        
+        adresse.addEventListener('input', function() {
+            adresseDynamique.classList.remove("hidden");
+            adresseDynamique.lastElementChild.innerHTML = this.value;
+        });
+        // Adresse Email
+        const adresseemail = document.getElementById(':r2c:');
+        const adresseemailDynamique = document.getElementById('adresseemailShow');
+        
+        adresseemail.addEventListener('input', function() {
+            adresseemailDynamique.classList.remove("hidden");
+            adresseemailDynamique.lastElementChild.innerHTML = this.value;
+        });
+        // code postal
+        
+        // ville
+        const ville = document.getElementById('focus-id-address-city');
+        const villeDynamique = document.getElementById('villeShow');
+    
+        ville.addEventListener('input', function() {
+            villeDynamique.classList.remove("hidden");
+            villeDynamique.lastElementChild.innerHTML = this.value;
+    
+            // villeDynamique.textContent = ville.value;
+        });
+        // numero de telephone
+        const telephone = document.getElementById(':r2e:');
+        const telephoneDynamique = document.getElementById('telephoneShow');
+        
+        telephone.addEventListener('input', function() {
+            telephoneDynamique.classList.remove("hidden");
+            telephoneDynamique.lastElementChild.innerHTML = this.value;
+        });
+        // date de naissance
+        const datenaissance = document.getElementById(':r2m:');
+        const datenaissanceDynamique = document.getElementById('datenaissanceShow');
+    
+        datenaissance.addEventListener('input', function() {
+            datenaissanceDynamique.classList.remove("hidden");
+            datenaissanceDynamique.lastElementChild.innerHTML = this.value;
+        });
+        // lieu de naissance 
+        // const lieunaissance = document.getElementById('truncate h-6 ms-0.5');
+        // const lieunaissanceDynamique = document.getElementById('lieunaissanceShow');
+        
+        // lieunaissance.addEventListener('input', function() {
+        //     lieunaissanceDynamique.classList.remove("hidden");
+        //     lieunaissanceDynamique.lastElementChild.innerHTML = this.value;
+        // });
+        //poste
+        const poste = document.getElementById(':r46:');
+        const posteDynamique = document.getElementById('poste');
+        const experience = document.getElementById("experienceShow");
+    
+        poste.addEventListener('input', function() {
+            posteDynamique.innerHTML = poste.value;
+            experience.classList.remove("hidden");
+        });
+    
+        //employeur
+        const employeur = document.getElementById('focus-id-employer-employer');
+        const employeurDynamique = document.getElementById('employeur');
+    
+        employeur.addEventListener('input', function() {
+            employeurDynamique.innerHTML = employeur.value;
+        });
+        //employeur
+        const ville1 = document.getElementById('focus-id-employer-city');
+        const ville1Dynamique = document.getElementById('ville2');
+    
+        ville1.addEventListener('input', function() {
+            ville1Dynamique.innerHTML = ville1.value;
+        });
+    
+        //mois de debut
+        const moisdebut = document.getElementById('focus-id-period-startdate');
+        const moisdebutDynamique = document.getElementById('moisdebut');
+        moisdebut.addEventListener('change', function() {
+            moisdebutDynamique.innerHTML = moisdebut.options[moisdebut.selectedIndex].text;
+        });
+    
+        //Annee de debut
+        const anneedebut = document.getElementById('focus-id-period-startdateAD');
+        const anneedebutDynamique = document.getElementById('anneedebutShow');
+        anneedebut.addEventListener('change', function() {
+            anneedebutDynamique.innerHTML = anneedebut.options[anneedebut.selectedIndex].text;
+        });
+    
+        //mois de fin
+            const moisfin = document.getElementById('focus-id-period-enddate');
+            const moisfinDynamique = document.getElementById('moisfin');
+            moisdebut.addEventListener('change', function() {
+            moisfinDynamique.innerHTML = moisfin.options[moisdebut.selectedIndex].text;
+        });
+    
+         //Annee de fin
+        const anneefin = document.getElementById('focus-id-period-startdateAF');
+        const anneefinDynamique = document.getElementById('anneefinShow');
+        anneefin.addEventListener('change', function() {
+            anneefinDynamique.innerHTML = anneefin.options[anneefin.selectedIndex].text;
+        });
+        // titre
+        // sexe et nationalite
+
+        // Wendy
+        function telecharger() {
+            const element = document.getElementById('cv-preview'); // Récupérer l'élément DOM
+
+            if (!element) {
+                console.error("L'élément avec l'ID 'cv-preview' n'a pas été trouvé.");
+                return;
+            }
+
+            const options = {
+                margin: 10,
+                filename: 'Mon-CvPro.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 4, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf()
+                .set(options)
+                .from(element)
+                .save();
+        }
     </script>
 </body>
 
