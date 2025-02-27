@@ -55,5 +55,13 @@ document.querySelector("#record-languages > div.w-full.flex.relative.flex-col")
     const surnameDynamique = document.getElementById('surname');
 
     surname.addEventListener('input', function() {
-        surnameDynamique.textContent = surname.value;
+        surnameDynamique.textContent = document.getElementById('focus-id-name-givenName').value;
+    });
+
+    //deuxieme
+    const poste = document.getElementById(':r46:');
+    const posteDynamique = document.getElementById('poste');
+
+    poste.addEventListener('input', function() {
+        posteDynamique.innerHTML = poste.value;
     });
